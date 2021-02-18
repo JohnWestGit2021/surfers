@@ -33,10 +33,10 @@ Paragraphs - Font family "Roboto"
 
 **_Persona One_**
 
-> I am a ....
+> I am a ....<br>
 
 > **_Persona Two_** >
-> I am a ...
+> I am a ...<br>
 
 ## General work practise <a name="generalpractise"></a>
 
