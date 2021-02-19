@@ -11,33 +11,90 @@ body {
   box-sizing: border-box;
 }
 
+.about-us-introduction{
+  display: inline-flex;
+}
+
 .instructor_img{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 6px rgba(0, 0, 0, 0.486);
 }
 
+.our-team-title{
+  text-align: center;
 
+}
+
+.column {
+  float:left;
+  width: 33%;
+  padding: 0 10px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
-    height: 150px;
+    height: 200px;
     background-image: linear-gradient(to bottom, #ff9000, #dc6d3d, #aa453c, #722d35, #502816);
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
  }
+
+
 
 .fa {
     padding: 17px;
     font-size: 36px;
-    width: 50px;
+    width: 80px;
     text-align: center;
     text-decoration: none;
     border-radius: 10%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin: 20px;
+    margin-left: 20px;
   }
   
   .fa:hover {
@@ -50,14 +107,11 @@ footer {
         transform: translateY(4px);
   }
   
-  
-  /* Facebook */
   .fa-facebook {
     background: #3B5998;
     color: rgb(255, 255, 255);
   }
   
-  /* Twitter */
   .fa-twitter {
     background: #55ACEE;
     color: rgb(255, 255, 255);
@@ -74,20 +128,24 @@ footer {
 
 .rights{
     color: rgb(218, 217, 217);
-    margin: 3px;
     font-size: larger;
+    margin-top: 70px;
 }
 
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
+  display: inline-flex;
 }
 .footer-links li
 {
-  display:block
+  display:block;
+  margin:30px;
+  font-size: 40px;
 }
 .footer-links a
 {
-  color:#737373
+  color:rgb(218, 217, 217);
 }
+
