@@ -15,12 +15,22 @@ html{
 
 body {
     box-sizing: border-box;
+
+    font-size: 1.6rem;
+    /*quick fix - while styling the rest.*/
   }
 
 /*colors*/
 $mainColor: #60dad4;
+$mainTextColor: black;
 
 /*mixins*/
+@mixin SectionSize ($height){
+  max-width: 144rem;/*may change lager on... depends on what widths the rest of the pages are.*/
+  height: $height;
+  max-height: $height;
+  margin: auto;
+}
 @mixin flex ($flex-direction, $justify-content, $align-items){
     display: flex;
     flex-direction: $flex-direction;

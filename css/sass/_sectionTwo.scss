@@ -1,4 +1,26 @@
 /*Main camp sections*/
 .sectionTwo{
-     /*section two*/
+    @include SectionSize(50rem);
+    @include flex(row, space-around, center);
+
+    .sectionTwo-article_image{
+        max-width: 30rem;
+        max-height: 50rem;
+
+        img{
+        width: 100%;
+
+        }
+
+    }
+
+    .mainCampArticle{
+        @include flex(column, space-between, flex-start);
+        max-width: 70rem;
+        height: 30rem;
+
+        button{
+            align-self: flex-end;
+        }
+    }
 }
