@@ -1,0 +1,43 @@
+/* ----- Browser Reset ----- */
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    /*1 rem = 10px*/
+    font-family: Arial, Helvetica, sans-serif; /*change this to the right one later*/
+}
+
+body {
+    box-sizing: border-box;
+  }
+
+/*colors*/
+$mainColor: #60dad4;
+
+/*mixins*/
+@mixin flex ($flex-direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+/*standard classes*/
+.mainHeading{
+
+}
+
+.secondHeading{
+
+}
+
+.mainParagraph{
+
+}
+

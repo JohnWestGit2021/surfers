@@ -1,0 +1,5 @@
+Fixa så att varje knapp tar sig till ett from för de olika lägren.
+
+införskaffa de olika fonterna till sidan +  lägga till den i _global.scss
+
+lägg till en välkommst sektion.
