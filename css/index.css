@@ -291,5 +291,47 @@ header nav .navList .navList-item .navLink:hover {
   height: 50rem;
 }
 
+/*forms*/
+#mainCamp-signUpInformation {
+  max-width: 144rem;
+  /*may change lager on... depends on what widths the rest of the pages are.*/
+  height: 50rem;
+  max-height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  background-color: lightblue;
+}
+
+#mainCamp-signUpInformation article {
+  width: 50rem;
+}
+
+#mainCamp-signUpInformation form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*footer*/
 /*# sourceMappingURL=index.css.map */

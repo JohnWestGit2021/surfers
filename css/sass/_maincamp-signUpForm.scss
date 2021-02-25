@@ -1,0 +1,16 @@
+#mainCamp-signUpInformation{
+    @include SectionSize(50rem);
+    @include flex(row, space-around, center);
+    display: none;
+  
+  
+
+        background-color: lightblue;
+
+        article{
+            width: 50rem;
+        }
+        form{
+            @include flex(column, space-around, center);
+        }
+}
