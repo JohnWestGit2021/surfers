@@ -3,7 +3,7 @@
     @include flex(row, space-around, center);
     max-width: 122rem;
     background-color: lightblue;
-    //display: none; /*importent to have the value on one for the onclick function to work*/
+    display: none; /*importent to have the value on one for the onclick function to work*/
         
 
         article{

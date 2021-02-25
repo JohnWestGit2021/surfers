@@ -312,6 +312,8 @@ header nav .navList .navList-item .navLink:hover {
           align-items: center;
   max-width: 122rem;
   background-color: lightblue;
+  display: none;
+  /*importent to have the value on one for the onclick function to work*/
 }
 
 #mainCamp-signUpInformation article {
@@ -401,6 +403,393 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #mainCamp-signUpInformation form .firstFormColumn, #mainCamp-signUpInformation form .secondFormColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25rem;
+  height: 40rem;
+  max-height: 50rem;
+}
+
+#preTraning-signUpForm {
+  max-width: 144rem;
+  /*may change lager on... depends on what widths the rest of the pages are.*/
+  height: 50rem;
+  max-height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 122rem;
+  background-color: lightblue;
+  display: none;
+  /*importent to have the value on one for the onclick function to work*/
+}
+
+#preTraning-signUpForm article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50rem;
+  height: 35rem;
+  max-height: 40rem;
+}
+
+#preTraning-signUpForm article .signUpForm_priceChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  width: 40rem;
+  max-width: 50rem;
+}
+
+#preTraning-signUpForm article .signUpForm_priceChart ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  height: 15rem;
+  max-height: 15rem;
+  list-style: none;
+}
+
+#preTraning-signUpForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#preTraning-signUpForm form input, #preTraning-signUpForm form textarea {
+  width: 20rem;
+  border: none;
+  padding: 0.5rem;
+}
+
+#preTraning-signUpForm form input:focus, #preTraning-signUpForm form textarea:focus {
+  outline: 1px solid  grey;
+}
+
+#preTraning-signUpForm form input:hover, #preTraning-signUpForm form textarea:hover {
+  background-color: #e6e6e6;
+}
+
+#preTraning-signUpForm form .firstFormColumn, #preTraning-signUpForm form .secondFormColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25rem;
+  height: 40rem;
+  max-height: 50rem;
+}
+
+#advancedTraning-signUpForm {
+  max-width: 144rem;
+  /*may change lager on... depends on what widths the rest of the pages are.*/
+  height: 50rem;
+  max-height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 122rem;
+  background-color: lightblue;
+  display: none;
+  /*importent to have the value on one for the onclick function to work*/
+}
+
+#advancedTraning-signUpForm article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50rem;
+  height: 35rem;
+  max-height: 40rem;
+}
+
+#advancedTraning-signUpForm article .signUpForm_priceChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  width: 40rem;
+  max-width: 50rem;
+}
+
+#advancedTraning-signUpForm article .signUpForm_priceChart ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  height: 15rem;
+  max-height: 15rem;
+  list-style: none;
+}
+
+#advancedTraning-signUpForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#advancedTraning-signUpForm form input, #advancedTraning-signUpForm form textarea {
+  width: 20rem;
+  border: none;
+  padding: 0.5rem;
+}
+
+#advancedTraning-signUpForm form input:focus, #advancedTraning-signUpForm form textarea:focus {
+  outline: 1px solid  grey;
+}
+
+#advancedTraning-signUpForm form input:hover, #advancedTraning-signUpForm form textarea:hover {
+  background-color: #e6e6e6;
+}
+
+#advancedTraning-signUpForm form .firstFormColumn, #advancedTraning-signUpForm form .secondFormColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25rem;
+  height: 40rem;
+  max-height: 50rem;
+}
+
+#weeklyTraning-signUpForm {
+  max-width: 144rem;
+  /*may change lager on... depends on what widths the rest of the pages are.*/
+  height: 50rem;
+  max-height: 50rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 122rem;
+  background-color: lightblue;
+  display: none;
+  /*importent to have the value on one for the onclick function to work*/
+}
+
+#weeklyTraning-signUpForm article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50rem;
+  height: 35rem;
+  max-height: 40rem;
+}
+
+#weeklyTraning-signUpForm article .signUpForm_priceChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  width: 40rem;
+  max-width: 50rem;
+}
+
+#weeklyTraning-signUpForm article .signUpForm_priceChart ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  height: 15rem;
+  max-height: 15rem;
+  list-style: none;
+}
+
+#weeklyTraning-signUpForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#weeklyTraning-signUpForm form input, #weeklyTraning-signUpForm form textarea {
+  width: 20rem;
+  border: none;
+  padding: 0.5rem;
+}
+
+#weeklyTraning-signUpForm form input:focus, #weeklyTraning-signUpForm form textarea:focus {
+  outline: 1px solid  grey;
+}
+
+#weeklyTraning-signUpForm form input:hover, #weeklyTraning-signUpForm form textarea:hover {
+  background-color: #e6e6e6;
+}
+
+#weeklyTraning-signUpForm form .firstFormColumn, #weeklyTraning-signUpForm form .secondFormColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

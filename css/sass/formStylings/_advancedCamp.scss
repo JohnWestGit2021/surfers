@@ -1,0 +1,57 @@
+#advancedTraning-signUpForm{
+    @include SectionSize(50rem);
+    @include flex(row, space-around, center);
+    max-width: 122rem;
+    background-color: lightblue;
+    display: none; /*importent to have the value on one for the onclick function to work*/
+        
+
+        article{
+            @include flex(column, space-between, flex-start);
+            width: 50rem;
+            height: 35rem;
+            max-height: 40rem;
+
+            .signUpForm_priceChart{
+                @include flex(row, space-between, space-evenly);
+                width: 40rem;
+                max-width: 50rem;
+
+                ul{
+                    @include flex(column, space-between, space-evenly);
+                    height: 15rem;
+                    max-height: 15rem;
+                    list-style: none;
+                }
+            }
+            
+        }
+
+
+        form{
+            @include flex(row, center, center);
+            
+
+            input, textarea{
+                width: 20rem;
+                border: none;
+                padding: 0.5rem;
+            }
+
+            input:focus, textarea:focus{
+                outline: 1px solid  grey;
+            }
+
+            input:hover, textarea:hover{
+                background-color: rgb(230, 230, 230);
+            }
+            
+            .firstFormColumn, .secondFormColumn{
+                @include flex(column, space-between, center);
+                width: 25rem;
+                height: 40rem;
+                max-height: 50rem;
+            }
+        }
+     
+}
