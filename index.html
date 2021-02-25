@@ -4,10 +4,276 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Surfers</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Home page</title>
   </head>
-  <body>
-    <!--starting a new branch laningPage-->
 
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Surf camp</div>
+        <ul class="navList">
+          <li class="navList-item"><a href="#" class="navLink">Home</a></li>
+          <li class="navList-item"><a href="#" class="navLink">About us</a></li>
+          <li class="navList-item"><a href="#" class="navLink">Gallery</a></li>
+          <li class="navList-item"><a href="#" class="navLink">Contact us</a></li>
+        </ul>
+      </nav>
+      <!--section one may end up here if we want the nav inside of the hero/first section-->
+    </header>
+
+  <!--section One of landing page-->
+    <section class="sectionOne">
+      <!--this might not be needed - depends if i can make it work-->
+      <div class="imageSliderContainer">
+          <img src="img/temp.jpg" alt="surfer" class="slider-standard">
+      </div>
+    </section>
+
+  <!--sectionThree start here-->
+
+    <section class="sectionTwo">
+      <article class="mainCampArticle">
+        <h2 class="mainCampArticle-heading mainHeading">
+          Upcoming teen camp in hawaii
+        </h2>
+        <p class="mainCamoArticle-paragraph mainParagraph">
+          Come join our Teen hawaii & Adventure Camp for the two week surf experience of a lifetime!
+          This adventure is for beginner to advanced surfers ages 14-18 who want to learn how to surf
+          or improve their skills while being immersed in the culture of Hawaii. Come have the time
+          of your life while surfing several of Hawii best breaks and exploring the Pahoa region
+          hawaii style!  
+        </p>
+        <p class="mainCamoArticle-paragraph mainParagraph">
+          We have been offering camps here since 2005 as the tropical climate, year-round waves, 
+          and 80 degree water temperatures make it a go-to destination for all levels of surfers. 
+        </p>
+
+        <!--from link/nav button-->
+        <button onclick="mainCampSignUp()" class="MainCampButton">
+            Learn More | Sign up
+        </button>
+      </article>
+      
+      <div class="sectionTwo-article_image">
+        <!--this imame might change later on to something mor fitting-->
+        <img src="/img/surfgroup.jpg" alt="surf group at sea">
+      </div>
+    </section>
+
+          <!-- ------------- sign up form- main camp starts here-------------- -->
+          <!-- ------------- sign up form- main camp starts here-------------- -->
+            <section id="mainCamp-signUpInformation">
+              <article class="signUp-article">
+                <h2 class="signUpForm_heading secondHeading">
+                  Lorem.
+                </h2>
+                <p class="signUpForm_paragraph mainParagraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum reiciendis quam culpa?
+                </p>
+                <h2 class="signUpForm_heading secondHeading">
+                  Lorem.
+                </h2>
+                <p class="signUpForm_paragraph mainParagraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum reiciendis quam culpa?
+                </p>
+                <h2 class="signUpForm_heading secondHeading">
+                  Price
+                </h2>
+                <p class="signUpForm_paragraph mainParagraph">
+                  All incluseive                     <span class="articleForm-priceStyling">250 $</span><br>
+                  room/per day                       <span class="articleForm-priceStyling">40 $</span><br>
+                  only food/whole camp               <span class="articleForm-priceStyling">100 $</span><br>
+                  only food/per day                  <span class="articleForm-priceStyling">35 $</span><br>
+                  borrow surf-board/per day           <span class="articleForm-priceStyling">50 $</span><br>
+                </p>
+              </article>
+              <!-- form -->
+              <form action="" class="Form">
+                 <!--first column of the form-->
+                <div class="firstFormColumn">
+                <!-- name of participant -->
+                <label for="Participant">Full name (participant)</label>
+                <input type="text" id="Participant" required>
+                <!-- name of parenet -->
+                <label for="Parent">Full name (parent)</label>
+                <input type="text" id="Parent">
+                <!-- email -->
+                <labal for="Email">Type tour email</labal>
+                <input type="email" id="Email" required>
+                <!-- mobile -->
+                <labal for="Mobile">Type tour email</labal>
+                <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                <!--Tell us something about you! -->
+                <label for="Message">tell us something about you</label>
+                <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+              </div>
+              <!--second column of the form-->
+              <div class="secondFormColumn">
+                <!-- food allergy selection -->
+                <labal for="Allergy">select if you have any allergys</labal>
+                <select id="Allergy" multiple>
+                  <option value="none">none</option>
+                  <option value="lactose">Lactose</option>
+                  <option value="gluten">Gluten</option>
+                  <option value="nuts">Nuts</option>
+                  <option value="egg">Egg</option>
+                  <option value="selleri">sellery</option>
+                </select>
+                <!-- Tell us something about you! -->
+                <label for="OtherAllergy">other allergy</label>
+                <textarea name="message" id="OtherAllergy" cols="30" rows="10"></textarea>
+                <!-- checkboxes -->
+                <div class="chekboxPricings">
+                  <input type="checkbox" id="AllInclusive">
+                  <label for="AllInclusive">all incluseive</label>
+                  <input type="checkbox" id="AllInclusive">
+                  <label for="AllInclusive">room/per day</label>
+                  <input type="checkbox" id="AllInclusive">
+                  <label for="AllInclusive">only food/whole camp </label>
+                  <input type="checkbox" id="AllInclusive">
+                  <label for="AllInclusive">only food/per day</label>
+                  <input type="checkbox" id="AllInclusive">
+                  <label for="AllInclusive">borrow surf-board/per day </label>
+                </div>
+                <input type="checkbox" id="Terms">
+                <label for="Terms"><a href="#">Agree on terms</a></label>
+                <button type="submit">submit</button>
+              </div>
+              </form>
+            </section>
+          <!-- ------------- sign up form- main camp ends here -------------- -->
+          <!-- ------------- sign up form- main camp ends here -------------- -->
+
+ <!--secation three starts here-->
+
+  <section class="sectionThree">
+  <!--first camp section three-->
+      <div class="subCampArticle">
+          <h3 class="subCampArticle-header secondHeading">
+            Pre-training camp:
+          </h3>
+          <!--paragraphs-->
+          <p class="subCampArticle-paragraph mainParagraph">
+            Are you an beginner and never have stand on a surf-board 
+            before, but you still want to be a part in our bigger camps? 
+          </p>
+          <p class="subCampArticle-paragraph mainParagraph">
+            WB Surf Camp has the program and prep-camp for you! 
+            Let's us help you get ready in time for our bigger
+            experiances. 
+          </p>
+          <!--buttons-->
+          <button onclick="PreTraningSignUp()" class="subCampButton">
+              Learn More | Sign up
+          </button>
+      </div>
+  <!--second camp section three-->
+      <div class="subCampArticle secondHeading">
+          <h3 class="subCampArticle-header">
+            Advanced traning weekend:
+          </h3>
+          <!--paragraph-->
+          <p class="subCampArticle-paragraph mainParagraph">
+            If you are an intermediate to advanced surfer looking to effectively 
+            improve your water and competitive skills, WB Surf Camp has 
+            the program and coach for you! 
+          </p>
+          <!--button-->
+          <button onclick="AdvancedTraningSignUp()" class="subCampButton">
+              Learn More | Sign up
+          </button>
+      </div>
+   <!--third camp section three-->
+      <div class="subCampArticle secondHeading">
+        <h3 class="subCampArticle-header secondHeading">
+          Weekly traning:
+        </h3>
+        <!--paragraph-->
+        <p class="subCampArticle-paragraph mainParagraph">
+          Sign up for weekly lesson in surfing, where we train you from 
+          an absolute beginner to upcoming pro.  
+        </p>
+        <!--bunton-->
+        <button onclick="weeklyTraningSignUp()" class="subCampButton">
+            Learn More | Sign up
+        </button>
+      </div>
+    </section>
+
+        <!-- ------------- sign up forms for sub camps camp start here -------------- -->
+        <!-- ------------- sign up forms for sub camps camp start here -------------- -->
+            <section class="subcampForms">
+              <!--pre traning camp form-->
+              <div id="preTraning-signUpForm">
+
+              </div>
+              <!--advanced traning camp form-->
+              <div id="advancedTraning-signUpForm">
+
+              </div>
+              <!--weekly traning camp form-->
+              <div id="weeklyTraning-signUpForm">
+
+              </div>
+            </section>
+        <!-- ------------- sign up forms for sub camps camp ends here -------------- -->
+        <!-- ------------- sign up forms for sub camps camp ends here -------------- -->
+
+  <!--section four start here-->
+    <section class="sectionFour">
+      <!--travel info image-->
+      <div class="faqImageContainer">
+        <img class="faqImage" src="img/traveling.jpg" alt="Piture of a volkswagen driving">
+      </div>
+      <!--article of section four-->
+      <article class="faqArticle">
+        <!--main article heading + main info-->
+        <h2 class="faqMainHeader mainHeading">
+          Teen Travel FAQs
+        </h2>
+        <p class="faqParagraph mainParagraph">
+          All participants are responsible for scheduling
+           their flights to arrive and depart from the 
+           designated airport at the appointed time.
+          </p>
+          <!--first question and anwser-->
+          <h3 class="faqSubHeader secondHeading">
+            What is the nearest airport and do you have a shuttle service?
+          </h3>
+          <p class="faqParagraph mainParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero provident maiores quisquam. Facere earum tempora illum, 
+            necessitatibus numquam itaque ab, officia possimus 
+            enim blanditiis nihil.
+          </p>
+          <!--second question and anwser-->
+          <h3 class="faqSubHeader secondHeading">
+            I’m nervous about traveling to another Hawaii alone. Can I travel with your instructor?  
+          </h3>
+          <p class="faqParagraph mainParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero provident maiores quisquam. Facere earum tempora illum, 
+            necessitatibus numquam itaque ab, officia possimus 
+            enim blanditiis nihil.
+          </p>
+          <!--third question and anwser-->
+          <h3 class="faqSubHeader secondHeading">
+            What if my luggage doesn’t make it?  
+          </h3>
+          <p class="faqParagraph mainParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Libero provident maiores quisquam. Facere earum tempora illum, 
+            necessitatibus numquam itaque ab, officia possimus 
+            enim blanditiis nihil.
+          </p>
+
+          <!--the questions might get put in to a div depending on how easy they are to work with or not.-->
+      </article>
+    </section>
+  
+    <script src="javascript/forms.js"></script>
   </body>
 </html>

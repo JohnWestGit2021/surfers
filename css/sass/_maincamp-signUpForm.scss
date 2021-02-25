@@ -1,0 +1,20 @@
+#mainCamp-signUpInformation{
+    @include SectionSize(50rem);
+    @include flex(row, space-around, center);
+    background-color: lightblue;
+    display: none; /*importent to have the value on one for the onclick function to work*/
+        
+
+        article{
+            width: 50rem;
+        }
+        form{
+            @include flex(row, space-around, center);
+        }
+        .firstFormColumn, 
+        .secondFormColumn{
+            @include flex(column, center, center);
+
+           
+        }
+}
