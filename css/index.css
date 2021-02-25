@@ -310,13 +310,64 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 122rem;
   background-color: lightblue;
-  display: none;
-  /*importent to have the value on one for the onclick function to work*/
 }
 
 #mainCamp-signUpInformation article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 50rem;
+  height: 35rem;
+  max-height: 40rem;
+}
+
+#mainCamp-signUpInformation article .signUpForm_priceChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  width: 40rem;
+  max-width: 50rem;
+}
+
+#mainCamp-signUpInformation article .signUpForm_priceChart ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  height: 15rem;
+  max-height: 15rem;
+  list-style: none;
 }
 
 #mainCamp-signUpInformation form {
@@ -327,15 +378,29 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#mainCamp-signUpInformation .firstFormColumn,
-#mainCamp-signUpInformation .secondFormColumn {
+#mainCamp-signUpInformation form input, #mainCamp-signUpInformation form textarea {
+  width: 20rem;
+  border: none;
+  padding: 0.5rem;
+}
+
+#mainCamp-signUpInformation form input:focus, #mainCamp-signUpInformation form textarea:focus {
+  outline: 1px solid  grey;
+}
+
+#mainCamp-signUpInformation form input:hover, #mainCamp-signUpInformation form textarea:hover {
+  background-color: #e6e6e6;
+}
+
+#mainCamp-signUpInformation form .firstFormColumn, #mainCamp-signUpInformation form .secondFormColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,12 +408,15 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 25rem;
+  height: 40rem;
+  max-height: 50rem;
 }
 
 /*footer*/

@@ -82,72 +82,78 @@
                 <h2 class="signUpForm_heading secondHeading">
                   Price
                 </h2>
-                <p class="signUpForm_paragraph mainParagraph">
-                  All incluseive                     <span class="articleForm-priceStyling">250 $</span><br>
-                  room/per day                       <span class="articleForm-priceStyling">40 $</span><br>
-                  only food/whole camp               <span class="articleForm-priceStyling">100 $</span><br>
-                  only food/per day                  <span class="articleForm-priceStyling">35 $</span><br>
-                  borrow surf-board/per day           <span class="articleForm-priceStyling">50 $</span><br>
-                </p>
+              <!--price chart start here-->
+                <div class="signUpForm_priceChart">
+                  <!--first column -->
+                  <div class="priceChart-columnTwo">
+                    <ul class="priceChart">
+                      <li class="chartItems">All inclusive</li>
+                      <li class="chartItems">room: per night</li>
+                      <li class="chartItems">food: per day</li>
+                      <li class="chartItems">food: whole camp</li>
+                      <li class="chartItems">rent a surf-board</li>
+                    </ul>
+                </div>
+                  <!--second column -->
+                  <div class="priceChart-columnTwo">
+                    <ul class="priceChart">
+                      <li class="chartPrice">250$</li>
+                      <li class="chartPrice">40$</li>
+                      <li class="chartPrice">35$</li>
+                      <li class="chartPrice">120$</li>
+                      <li class="chartPrice">80$</li>
+                    </ul>
+                  </div>
+                </div>
               </article>
               <!-- form -->
               <form action="" class="Form">
                  <!--first column of the form-->
                 <div class="firstFormColumn">
-                <!-- name of participant -->
-                <label for="Participant">Full name (participant)</label>
-                <input type="text" id="Participant" required>
-                <!-- name of parenet -->
-                <label for="Parent">Full name (parent)</label>
-                <input type="text" id="Parent">
-                <!-- email -->
-                <labal for="Email">Type tour email</labal>
-                <input type="email" id="Email" required>
-                <!-- mobile -->
-                <labal for="Mobile">Type tour email</labal>
-                <input type="text" id="Mobile" placeholder="076 101 23 14" required>
-                <!--Tell us something about you! -->
-                <label for="Message">tell us something about you</label>
-                <textarea name="message" id="Message" cols="30" rows="10"></textarea>
-              </div>
-              <!--second column of the form-->
-              <div class="secondFormColumn">
-                <!-- food allergy selection -->
-                <labal for="Allergy">select if you have any allergys</labal>
-                <select id="Allergy" multiple>
-                  <option value="none">none</option>
-                  <option value="lactose">Lactose</option>
-                  <option value="gluten">Gluten</option>
-                  <option value="nuts">Nuts</option>
-                  <option value="egg">Egg</option>
-                  <option value="selleri">sellery</option>
-                </select>
-                <!-- Tell us something about you! -->
-                <label for="OtherAllergy">other allergy</label>
-                <textarea name="message" id="OtherAllergy" cols="30" rows="10"></textarea>
-                <!-- checkboxes -->
-                <div class="chekboxPricings">
-                  <input type="checkbox" id="AllInclusive">
-                  <label for="AllInclusive">all incluseive</label>
-                  <input type="checkbox" id="AllInclusive">
-                  <label for="AllInclusive">room/per day</label>
-                  <input type="checkbox" id="AllInclusive">
-                  <label for="AllInclusive">only food/whole camp </label>
-                  <input type="checkbox" id="AllInclusive">
-                  <label for="AllInclusive">only food/per day</label>
-                  <input type="checkbox" id="AllInclusive">
-                  <label for="AllInclusive">borrow surf-board/per day </label>
-                </div>
-                <input type="checkbox" id="Terms">
-                <label for="Terms"><a href="#">Agree on terms</a></label>
-                <button type="submit">submit</button>
+                    <!-- name of participant -->
+                    <label for="Participant">Full name (participant)</label>
+                    <input type="text" id="Participant" required>
+                    <!-- name of parenet -->
+                    <label for="Parent">Full name (parent)</label>
+                    <input type="text" id="Parent">
+                    <!-- email -->
+                    <labal for="Email">Type tour email</labal>
+                    <input type="email" id="Email" required>
+                    <!-- mobile -->
+                    <labal for="Mobile">Type tour email</labal>
+                    <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                    <!--Tell us something about you! -->
+                    <label for="Message">tell us something about you</label>
+                    <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                  </div>
+                <!--second column of the form-->
+                <div class="secondFormColumn">
+                    <!-- food allergy selection -->
+                    <labal for="Allergy">select if you have any allergys</labal>
+                    <select id="Allergy">
+                      <option value="none">none</option>
+                      <option value="lactose">Lactose</option>
+                      <option value="gluten">Gluten</option>
+                      <option value="nuts">Nuts</option>
+                      <option value="egg">Egg</option>
+                      <option value="selleri">sellery</option>
+                    </select>
+                    <!-- Tell us something about you! -->
+                    <label for="OtherAllergy">other allergy</label>
+                    <textarea name="message" id="OtherAllergy" cols="30" rows="10"></textarea>
+                    <!-- checkboxes -->
+                    
+                    <input type="checkbox" id="Terms">
+                    <label for="Terms"><a href="#">Agree on terms</a></label>
+                    <button type="submit">submit</button>
               </div>
               </form>
             </section>
           <!-- ------------- sign up form- main camp ends here -------------- -->
           <!-- ------------- sign up form- main camp ends here -------------- -->
-
- <!--secation three starts here-->
+  
+ 
+<!----- secation three starts here ------>
 
   <section class="sectionThree">
   <!--first camp section three-->
@@ -222,7 +228,9 @@
         <!-- ------------- sign up forms for sub camps camp ends here -------------- -->
         <!-- ------------- sign up forms for sub camps camp ends here -------------- -->
 
-  <!--section four start here-->
+
+<!---- section four start here ---->
+
     <section class="sectionFour">
       <!--travel info image-->
       <div class="faqImageContainer">
