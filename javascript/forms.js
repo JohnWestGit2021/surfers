@@ -11,6 +11,7 @@ function mainCampSignUp() {
   }
 
 
+  //sub-camp form display functions.
   function preTraningSignUp() {
     let form = document.getElementById("preTraning-signUpForm");
     if (form.style.display === "none") {

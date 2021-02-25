@@ -310,8 +310,9 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
   background-color: lightblue;
+  display: none;
+  /*importent to have the value on one for the onclick function to work*/
 }
 
 #mainCamp-signUpInformation article {
@@ -322,12 +323,29 @@ header nav .navList .navList-item .navLink:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainCamp-signUpInformation .firstFormColumn,
+#mainCamp-signUpInformation .secondFormColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
