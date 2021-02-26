@@ -19,7 +19,7 @@
 
                 ul{
                     @include flex(column, space-between, space-evenly);
-                    height: 15rem;
+                    height: 10rem;
                     max-height: 15rem;
                     list-style: none;
                 }
