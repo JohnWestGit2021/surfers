@@ -57,6 +57,6 @@ function mainCampSignUp() {
       mainCamp.style.display = "none";
     }
     else {
-      advCamp.style.display = "none";
+      weeklyCamp.style.display = "none";
     }
   }

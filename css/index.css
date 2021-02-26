@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* global */
 /* ----- Browser Reset ----- */
 *,
@@ -310,6 +311,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 122rem;
   background-color: lightblue;
   display: none;
@@ -330,7 +333,7 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50rem;
+  max-width: 40rem;
   height: 35rem;
   max-height: 40rem;
 }
@@ -349,8 +352,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
-  width: 40rem;
-  max-width: 50rem;
+  width: 100%;
+  /*denna förhåller sig till max-width i articlen*/
 }
 
 #mainCamp-signUpInformation article .signUpForm_priceChart ul {
@@ -386,6 +389,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #mainCamp-signUpInformation form input, #mainCamp-signUpInformation form textarea {
@@ -410,15 +415,52 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 25rem;
   height: 40rem;
   max-height: 50rem;
+}
+
+#mainCamp-signUpInformation form .firstFormColumn .termsAndSubmit, #mainCamp-signUpInformation form .secondFormColumn .termsAndSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20rem;
+  height: 14rem;
+}
+
+#mainCamp-signUpInformation form .firstFormColumn .termsAndSubmit input, #mainCamp-signUpInformation form .secondFormColumn .termsAndSubmit input {
+  width: 2rem;
+}
+
+#mainCamp-signUpInformation form .firstFormColumn .termsAndSubmit a, #mainCamp-signUpInformation form .secondFormColumn .termsAndSubmit a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+}
+
+#mainCamp-signUpInformation form .firstFormColumn .termsAndSubmit a:hover, #mainCamp-signUpInformation form .secondFormColumn .termsAndSubmit a:hover {
+  text-decoration: underline;
+}
+
+#mainCamp-signUpInformation form .firstFormColumn button, #mainCamp-signUpInformation form .secondFormColumn button {
+  padding: 0.5rem 2rem;
 }
 
 #preTraning-signUpForm {
@@ -439,6 +481,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 122rem;
   background-color: lightblue;
   display: none;
@@ -459,7 +503,7 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50rem;
+  max-width: 40rem;
   height: 35rem;
   max-height: 40rem;
 }
@@ -478,8 +522,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
-  width: 40rem;
-  max-width: 50rem;
+  width: 100%;
+  /*denna förhåller sig till max-width i articlen*/
 }
 
 #preTraning-signUpForm article .signUpForm_priceChart ul {
@@ -515,6 +559,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #preTraning-signUpForm form input, #preTraning-signUpForm form textarea {
@@ -539,15 +585,52 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 25rem;
   height: 40rem;
   max-height: 50rem;
+}
+
+#preTraning-signUpForm form .firstFormColumn .termsAndSubmit, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20rem;
+  height: 14rem;
+}
+
+#preTraning-signUpForm form .firstFormColumn .termsAndSubmit input, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit input {
+  width: 2rem;
+}
+
+#preTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+}
+
+#preTraning-signUpForm form .firstFormColumn .termsAndSubmit a:hover, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit a:hover {
+  text-decoration: underline;
+}
+
+#preTraning-signUpForm form .firstFormColumn button, #preTraning-signUpForm form .secondFormColumn button {
+  padding: 0.5rem 2rem;
 }
 
 #advancedTraning-signUpForm {
@@ -568,6 +651,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 122rem;
   background-color: lightblue;
   display: none;
@@ -588,7 +673,7 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50rem;
+  max-width: 40rem;
   height: 35rem;
   max-height: 40rem;
 }
@@ -607,8 +692,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
-  width: 40rem;
-  max-width: 50rem;
+  width: 100%;
+  /*denna förhåller sig till max-width i articlen*/
 }
 
 #advancedTraning-signUpForm article .signUpForm_priceChart ul {
@@ -644,6 +729,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #advancedTraning-signUpForm form input, #advancedTraning-signUpForm form textarea {
@@ -668,15 +755,52 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 25rem;
   height: 40rem;
   max-height: 50rem;
+}
+
+#advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20rem;
+  height: 14rem;
+}
+
+#advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit input, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit input {
+  width: 2rem;
+}
+
+#advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+}
+
+#advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit a:hover, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit a:hover {
+  text-decoration: underline;
+}
+
+#advancedTraning-signUpForm form .firstFormColumn button, #advancedTraning-signUpForm form .secondFormColumn button {
+  padding: 0.5rem 2rem;
 }
 
 #weeklyTraning-signUpForm {
@@ -697,6 +821,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 122rem;
   background-color: lightblue;
   display: none;
@@ -717,7 +843,7 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 50rem;
+  max-width: 40rem;
   height: 35rem;
   max-height: 40rem;
 }
@@ -736,8 +862,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
-  width: 40rem;
-  max-width: 50rem;
+  width: 100%;
+  /*denna förhåller sig till max-width i articlen*/
 }
 
 #weeklyTraning-signUpForm article .signUpForm_priceChart ul {
@@ -773,6 +899,8 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #weeklyTraning-signUpForm form input, #weeklyTraning-signUpForm form textarea {
@@ -797,15 +925,52 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 25rem;
   height: 40rem;
   max-height: 50rem;
+}
+
+#weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20rem;
+  height: 14rem;
+}
+
+#weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit input, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit input {
+  width: 2rem;
+}
+
+#weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+}
+
+#weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit a:hover, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit a:hover {
+  text-decoration: underline;
+}
+
+#weeklyTraning-signUpForm form .firstFormColumn button, #weeklyTraning-signUpForm form .secondFormColumn button {
+  padding: 0.5rem 2rem;
 }
 
 /*footer*/

@@ -1,6 +1,7 @@
 #preTraning-signUpForm{
     @include SectionSize(50rem);
     @include flex(row, space-around, center);
+    flex-wrap: wrap;
     max-width: 122rem;
     background-color: lightblue;
     display: none; /*importent to have the value on one for the onclick function to work*/
@@ -8,14 +9,13 @@
 
         article{
             @include flex(column, space-between, flex-start);
-            width: 50rem;
+            max-width: 40rem;
             height: 35rem;
             max-height: 40rem;
 
             .signUpForm_priceChart{
                 @include flex(row, space-between, space-evenly);
-                width: 40rem;
-                max-width: 50rem;
+                width: 100%; /*denna förhåller sig till max-width i articlen*/
 
                 ul{
                     @include flex(column, space-between, space-evenly);
@@ -30,6 +30,7 @@
 
         form{
             @include flex(row, center, center);
+            flex-wrap: wrap;
             
 
             input, textarea{
@@ -47,11 +48,39 @@
             }
             
             .firstFormColumn, .secondFormColumn{
-                @include flex(column, space-between, center);
+                @include flex(column, space-around, center);
                 width: 25rem;
                 height: 40rem;
                 max-height: 50rem;
+
+                
+                .termsAndSubmit{
+                    @include flex(row, flex-start, flex-start);
+                    flex-wrap: wrap;
+                    width: 20rem;
+                    height: 14rem;
+                   
+
+                    input{ 
+                        width: 2rem;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: $mainTextColor;
+                        margin-right: 2rem;
+                    }
+                        a:hover{
+                            text-decoration: underline;
+                        }
+
+                }
+
+                button{
+                    padding: 0.5rem 2rem;
+                }
             }
+
         }
      
 }

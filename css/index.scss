@@ -1,18 +1,18 @@
 /* global */
-@import 'sass/global';
+@import 'sass/landingPage-global';
 
 /*nav*/
 @import 'sass/nav';
 
 /*sections*/
-@import 'sass/sectionOne';
-@import 'sass/sectionTwo';
-@import 'sass/sectionThree';
-@import 'sass/sectionFour';
+@import 'sass/landingPage-sectionOne';
+@import 'sass/landingPage-sectionTwo';
+@import 'sass/landingPage-sectionThree';
+@import 'sass/landingPage-sectionFour';
 
 /*forms*/
-@import 'sass/formStylings/maincamp-signUpForm';
-@import 'sass/formStylings/preTraningCamp';
-@import 'sass/formStylings/advancedCamp';
-@import 'sass/formStylings/weeklyTraning';
+@import 'sass/formStylings-landingPage/maincamp-signUpForm';
+@import 'sass/formStylings-landingPage/preTraningCamp';
+@import 'sass/formStylings-landingPage/advancedCamp';
+@import 'sass/formStylings-landingPage/weeklyTraning';
 /*footer*/

@@ -106,16 +106,13 @@
                   </div>
                 </div>
               </article>
-              <!-- form -->
+              <!-- form copie -->
               <form action="" class="Form">
                  <!--first column of the form-->
                 <div class="firstFormColumn">
                     <!-- name of participant -->
                     <label for="Participant">Full name (participant)</label>
                     <input type="text" id="Participant" required>
-                    <!-- name of parenet -->
-                    <label for="Parent">Full name (parent)</label>
-                    <input type="text" id="Parent">
                     <!-- email -->
                     <labal for="Email">Type tour email</labal>
                     <input type="email" id="Email" required>
@@ -128,25 +125,24 @@
                   </div>
                 <!--second column of the form-->
                 <div class="secondFormColumn">
-                    <!-- food allergy selection -->
-                    <labal for="Allergy">select if you have any allergys</labal>
-                    <select id="Allergy">
-                      <option value="none">none</option>
-                      <option value="lactose">Lactose</option>
-                      <option value="gluten">Gluten</option>
-                      <option value="nuts">Nuts</option>
-                      <option value="egg">Egg</option>
-                      <option value="selleri">sellery</option>
-                    </select>
-                    <!-- Tell us something about you! -->
-                    <label for="OtherAllergy">other allergy</label>
-                    <textarea name="message" id="OtherAllergy" cols="30" rows="10"></textarea>
-                    <!-- checkboxes -->
-                    
-                    <input type="checkbox" id="Terms">
-                    <label for="Terms"><a href="#">Agree on terms</a></label>
-                    <button type="submit">submit</button>
-              </div>
+                    <!-- name of parenet -->
+                    <label for="Parent">Full name (guradian)</label>
+                    <input type="text" id="Parent">
+                     <!-- email -->
+                     <labal for="EmailParent">Type your guradians email</labal>
+                     <input type="email" id="EmailParent">
+                      <!-- mobile -->
+                    <labal for="Mobile">Type tour email</labal>
+                    <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                   
+                    <!-- submit section -->
+                    <div class="termsAndSubmit">
+                      <input type="checkbox" id="Terms" required>
+                      <label for="Terms"><a href="#">Agree on terms</a></label>
+                    </div>
+                      <!--button-->
+                      <button type="submit">submit</button>
+                </div>
               </form>
             </section>
           <!-- ------------- sign up form- main camp ends here -------------- -->
@@ -214,40 +210,58 @@
             <section class="subcampForms">
               <!--pre traning camp form-->
               <div id="preTraning-signUpForm">
-                <form action="" class="Form">
-                  <!--first column of the form-->
+                 <!------- form copie from main camp ------>
+                 <!------- form copie from main camp ------>
+                   <form action="" class="Form">
+                      <!--first column of the form-->
                       <div class="firstFormColumn">
-                      <!-- name of participant -->
-                      <label for="Participant">Full name (participant)</label>
-                      <input type="text" id="Participant" required>
-                      <!-- name of parenet -->
-                      <label for="Parent">Full name (parent)</label>
-                      <input type="text" id="Parent">
-                      <!-- email -->
-                      <labal for="Email">Type tour email</labal>
-                      <input type="email" id="Email" required>
-                      <!-- mobile -->
-                      <labal for="Mobile">Type tour email</labal>
-                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
-                      <!--Tell us something about you! -->
-                      <label for="Message">tell us something about you</label>
-                      <textarea name="message" id="Message" cols="30" rows="10"></textarea>
-                    </div>
-                  </form>
+                          <!-- name of participant -->
+                          <label for="Participant">Full name (participant)</label>
+                          <input type="text" id="Participant" required>
+                          <!-- email -->
+                          <labal for="Email">Type tour email</labal>
+                          <input type="email" id="Email" required>
+                          <!-- mobile -->
+                          <labal for="Mobile">Type tour email</labal>
+                          <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                          <!--Tell us something about you! -->
+                          <label for="Message">tell us something about you</label>
+                          <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                        </div>
+                      <!--second column of the form-->
+                      <div class="secondFormColumn">
+                          <!-- name of parenet -->
+                          <label for="Parent">Full name (guradian)</label>
+                          <input type="text" id="Parent">
+                            <!-- email -->
+                            <labal for="EmailParent">Type your guradians email</labal>
+                            <input type="email" id="EmailParent">
+                            <!-- mobile -->
+                          <labal for="Mobile">Type tour email</labal>
+                          <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                          
+                          <!-- submit section -->
+                          <div class="termsAndSubmit">
+                            <input type="checkbox" id="Terms" required>
+                            <label for="Terms"><a href="#">Agree on terms</a></label>
+                          </div>
+                            <!--button-->
+                            <button type="submit">submit</button>
+                      </div>
+                   </form>
               </div>
               
               <!--advanced traning camp form-->
               <div id="advancedTraning-signUpForm">
                  <p>Lorem, ipsum.</p>
-                  <form action="" class="Form">
-                    <!--first column of the form-->
-                      <div class="firstFormColumn">
+                 <!------- form copie from main camp ------>
+                 <!------- form copie from main camp ------>
+                 <form action="" class="Form">
+                  <!--first column of the form-->
+                  <div class="firstFormColumn">
                       <!-- name of participant -->
                       <label for="Participant">Full name (participant)</label>
                       <input type="text" id="Participant" required>
-                      <!-- name of parenet -->
-                      <label for="Parent">Full name (parent)</label>
-                      <input type="text" id="Parent">
                       <!-- email -->
                       <labal for="Email">Type tour email</labal>
                       <input type="email" id="Email" required>
@@ -258,20 +272,39 @@
                       <label for="Message">tell us something about you</label>
                       <textarea name="message" id="Message" cols="30" rows="10"></textarea>
                     </div>
-                  </form>
+                  <!--second column of the form-->
+                  <div class="secondFormColumn">
+                      <!-- name of parenet -->
+                      <label for="Parent">Full name (guradian)</label>
+                      <input type="text" id="Parent">
+                        <!-- email -->
+                        <labal for="EmailParent">Type your guradians email</labal>
+                        <input type="email" id="EmailParent">
+                        <!-- mobile -->
+                      <labal for="Mobile">Type tour email</labal>
+                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                      
+                      <!-- submit section -->
+                      <div class="termsAndSubmit">
+                        <input type="checkbox" id="Terms" required>
+                        <label for="Terms"><a href="#">Agree on terms</a></label>
+                      </div>
+                        <!--button-->
+                        <button type="submit">submit</button>
+                  </div>
+               </form>
               </div>
 
               <!--weekly traning camp form-->
               <div id="weeklyTraning-signUpForm">
-                <form action="" class="Form">
-                    <!--first column of the form-->
-                      <div class="firstFormColumn">
+                 <!------- form copie from main camp ------>
+                 <!------- form copie from main camp ------>
+                 <form action="" class="Form">
+                  <!--first column of the form-->
+                  <div class="firstFormColumn">
                       <!-- name of participant -->
                       <label for="Participant">Full name (participant)</label>
                       <input type="text" id="Participant" required>
-                      <!-- name of parenet -->
-                      <label for="Parent">Full name (parent)</label>
-                      <input type="text" id="Parent">
                       <!-- email -->
                       <labal for="Email">Type tour email</labal>
                       <input type="email" id="Email" required>
@@ -282,7 +315,27 @@
                       <label for="Message">tell us something about you</label>
                       <textarea name="message" id="Message" cols="30" rows="10"></textarea>
                     </div>
-                  </form>
+                  <!--second column of the form-->
+                  <div class="secondFormColumn">
+                      <!-- name of parenet -->
+                      <label for="Parent">Full name (guradian)</label>
+                      <input type="text" id="Parent">
+                        <!-- email -->
+                        <labal for="EmailParent">Type your guradians email</labal>
+                        <input type="email" id="EmailParent">
+                        <!-- mobile -->
+                      <labal for="Mobile">Type tour email</labal>
+                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                      
+                      <!-- submit section -->
+                      <div class="termsAndSubmit">
+                        <input type="checkbox" id="Terms" required>
+                        <label for="Terms"><a href="#">Agree on terms</a></label>
+                      </div>
+                        <!--button-->
+                        <button type="submit">submit</button>
+                  </div>
+               </form>
               </div>
             </section>
         <!-- ------------- sign up forms for sub camps camp ends here -------------- -->
