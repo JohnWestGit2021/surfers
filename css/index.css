@@ -13,25 +13,77 @@
 html {
   font-size: 62.5%;
   /*1 rem = 10px*/
-  font-family: Arial, Helvetica, sans-serif;
-  /*change this to the right one later*/
 }
 
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #e0e0e0;
   font-size: 1.6rem;
-  /*quick fix - while styling the rest.*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 /*colors*/
+/*this is the main color*/
 /*mixins*/
+/*standard tag stylings*/
+button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: none;
+  color: #00336d;
+  border: none;
+  padding: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid #00336d;
+  border-radius: 2rem;
+}
+
+label {
+  color: #000000;
+}
+
 /*standard classes*/
+.mainHeading {
+  color: #60dad4;
+  font-family: 'Reggae One', cursive;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.35rem;
+}
+
+.secondHeading {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.mainParagraph {
+  color: #000000;
+}
+
+.secondParagraph {
+  color: #f7f7f7;
+}
+
+.thirdParagraph {
+  color: #f7f7f7;
+}
+
 /*nav*/
 /*navigation section*/
 header {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
   height: 10rem;
   max-height: 10rem;
   margin: auto;
@@ -99,7 +151,7 @@ header nav .navList .navList-item {
 
 header nav .navList .navList-item .navLink {
   text-decoration: none;
-  color: black;
+  color: #000000;
   padding: 1rem;
 }
 
@@ -112,6 +164,7 @@ header nav .navList .navList-item .navLink:hover {
 .sectionOne {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
   height: 40rem;
   max-height: 40rem;
   margin: auto;
@@ -131,7 +184,6 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 .sectionOne .imageSliderContainer {
-  max-width: 122rem;
   height: 40rem;
   max-height: 40rem;
 }
@@ -147,8 +199,9 @@ header nav .navList .navList-item .navLink:hover {
 .sectionTwo {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
-  height: 50rem;
-  max-height: 50rem;
+  background-color: #ffffff;
+  height: 60rem;
+  max-height: 60rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,15 +215,16 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ffffff;
 }
 
 .sectionTwo .sectionTwo-article_image {
-  max-width: 30rem;
-  max-height: 50rem;
+  max-width: 35rem;
 }
 
 .sectionTwo .sectionTwo-article_image img {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .sectionTwo .mainCampArticle {
@@ -188,7 +242,12 @@ header nav .navList .navList-item .navLink:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 70rem;
-  height: 30rem;
+  height: 35rem;
+}
+
+.sectionTwo .mainCampArticle span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
 }
 
 .sectionTwo .mainCampArticle button {
@@ -200,8 +259,9 @@ header nav .navList .navList-item .navLink:hover {
 .sectionThree {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
-  height: 30rem;
-  max-height: 30rem;
+  background-color: #ffffff;
+  height: 35rem;
+  max-height: 35rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,15 +276,13 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #7bd3ce;
   /*.subCampArticle:hover{
             background-color: #e9e9e9;
         }*/
 }
 
 .sectionThree .subCampArticle {
-  height: 25rem;
-  width: 25rem;
-  max-width: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,24 +290,36 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 30rem;
+  max-width: 30rem;
 }
 
 .sectionThree .subCampArticle .subCampArticle-paragraph {
   text-align: center;
+  line-height: 1.8rem;
+  width: 72%;
+}
+
+.sectionThree .subCampArticle .advCampBtn {
+  margin-top: 8%;
+}
+
+.sectionThree .subCampArticle .weeklyCampBtn {
+  margin-top: 8%;
 }
 
 /*travle FAQ section*/
 .sectionFour {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
-  height: 70rem;
-  max-height: 70rem;
+  background-color: #ffffff;
+  height: 55rem;
+  max-height: 55rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,20 +328,23 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #FFA14E;
 }
 
 .sectionFour .faqImageContainer {
-  max-width: 40rem;
-  max-height: 70rem;
+  width: 60rem;
+  height: 100%;
 }
 
 .sectionFour .faqImageContainer img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .sectionFour .faqArticle {
@@ -288,14 +361,16 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 70rem;
+  max-width: 50rem;
   height: 50rem;
+  margin-right: 10rem;
 }
 
 /*forms*/
 #mainCamp-signUpInformation {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
   margin: auto;
@@ -313,8 +388,7 @@ header nav .navList .navList-item .navLink:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 122rem;
-  background-color: lightblue;
+  background-color: #ececec;
   display: none;
   /*importent to have the value on one for the onclick function to work*/
 }
@@ -399,10 +473,6 @@ header nav .navList .navList-item .navLink:hover {
   padding: 0.5rem;
 }
 
-#mainCamp-signUpInformation form input:focus, #mainCamp-signUpInformation form textarea:focus {
-  outline: 1px solid  grey;
-}
-
 #mainCamp-signUpInformation form input:hover, #mainCamp-signUpInformation form textarea:hover {
   background-color: #e6e6e6;
 }
@@ -451,7 +521,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #mainCamp-signUpInformation form .firstFormColumn .termsAndSubmit a, #mainCamp-signUpInformation form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   margin-right: 2rem;
 }
 
@@ -466,6 +536,7 @@ header nav .navList .navList-item .navLink:hover {
 #preTraning-signUpForm {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
   margin: auto;
@@ -483,8 +554,7 @@ header nav .navList .navList-item .navLink:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 122rem;
-  background-color: lightblue;
+  background-color: #ececec;
   display: none;
   /*importent to have the value on one for the onclick function to work*/
 }
@@ -504,7 +574,7 @@ header nav .navList .navList-item .navLink:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 40rem;
-  height: 35rem;
+  height: 25rem;
   max-height: 40rem;
 }
 
@@ -540,7 +610,7 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: space-evenly;
       -ms-flex-align: space-evenly;
           align-items: space-evenly;
-  height: 10rem;
+  height: 5rem;
   max-height: 15rem;
   list-style: none;
 }
@@ -567,10 +637,6 @@ header nav .navList .navList-item .navLink:hover {
   width: 20rem;
   border: none;
   padding: 0.5rem;
-}
-
-#preTraning-signUpForm form input:focus, #preTraning-signUpForm form textarea:focus {
-  outline: 1px solid  grey;
 }
 
 #preTraning-signUpForm form input:hover, #preTraning-signUpForm form textarea:hover {
@@ -621,7 +687,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #preTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   margin-right: 2rem;
 }
 
@@ -636,6 +702,7 @@ header nav .navList .navList-item .navLink:hover {
 #advancedTraning-signUpForm {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
   margin: auto;
@@ -653,8 +720,7 @@ header nav .navList .navList-item .navLink:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 122rem;
-  background-color: lightblue;
+  background-color: #ececec;
   display: none;
   /*importent to have the value on one for the onclick function to work*/
 }
@@ -739,10 +805,6 @@ header nav .navList .navList-item .navLink:hover {
   padding: 0.5rem;
 }
 
-#advancedTraning-signUpForm form input:focus, #advancedTraning-signUpForm form textarea:focus {
-  outline: 1px solid  grey;
-}
-
 #advancedTraning-signUpForm form input:hover, #advancedTraning-signUpForm form textarea:hover {
   background-color: #e6e6e6;
 }
@@ -791,7 +853,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   margin-right: 2rem;
 }
 
@@ -806,6 +868,7 @@ header nav .navList .navList-item .navLink:hover {
 #weeklyTraning-signUpForm {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
   margin: auto;
@@ -823,8 +886,7 @@ header nav .navList .navList-item .navLink:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 122rem;
-  background-color: lightblue;
+  background-color: #ececec;
   display: none;
   /*importent to have the value on one for the onclick function to work*/
 }
@@ -909,10 +971,6 @@ header nav .navList .navList-item .navLink:hover {
   padding: 0.5rem;
 }
 
-#weeklyTraning-signUpForm form input:focus, #weeklyTraning-signUpForm form textarea:focus {
-  outline: 1px solid  grey;
-}
-
 #weeklyTraning-signUpForm form input:hover, #weeklyTraning-signUpForm form textarea:hover {
   background-color: #e6e6e6;
 }
@@ -961,7 +1019,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   margin-right: 2rem;
 }
 

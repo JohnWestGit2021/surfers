@@ -2,15 +2,14 @@
     @include SectionSize(50rem);
     @include flex(row, space-around, center);
     flex-wrap: wrap;
-    max-width: 122rem;
-    background-color: lightblue;
+    background-color: $formBackgroundColor;
     display: none; /*importent to have the value on one for the onclick function to work*/
         
 
         article{
             @include flex(column, space-between, flex-start);
             max-width: 40rem;
-            height: 35rem;
+            height: 25rem;
             max-height: 40rem;
 
             .signUpForm_priceChart{
@@ -19,7 +18,7 @@
 
                 ul{
                     @include flex(column, space-between, space-evenly);
-                    height: 10rem;
+                    height: 5rem;
                     max-height: 15rem;
                     list-style: none;
                 }
@@ -38,11 +37,6 @@
                 border: none;
                 padding: 0.5rem;
             }
-
-            input:focus, textarea:focus{
-                outline: 1px solid  grey;
-            }
-
             input:hover, textarea:hover{
                 background-color: rgb(230, 230, 230);
             }
@@ -67,7 +61,7 @@
 
                     a{
                         text-decoration: none;
-                        color: $mainTextColor;
+                        color: $mainParagraphColor;
                         margin-right: 2rem;
                     }
                         a:hover{

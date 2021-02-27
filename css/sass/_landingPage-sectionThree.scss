@@ -1,16 +1,27 @@
 /*secondary camps column section*/
 .sectionThree{
-    @include SectionSize(30rem);
+    @include SectionSize(35rem);
     @include flex(row, space-evenly, center);
+    background-color: $mainColor;
 
     .subCampArticle{
-        height: 25rem;
-        width: 25rem;
-        max-width:25rem;
-        @include flex(column, space-between, center);
+        @include flex(column, space-around, center);
+        height: 30rem;
+        max-width:30rem;
+        
 
         .subCampArticle-paragraph{
             text-align: center;
+           line-height: 1.8rem;
+           width: 72%;
+        }
+
+        .advCampBtn{
+            margin-top: 8%;
+        }
+
+        .weeklyCampBtn{
+            margin-top: 8%;
         }
     }
         /*.subCampArticle:hover{

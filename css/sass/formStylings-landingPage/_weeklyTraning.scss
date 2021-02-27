@@ -2,8 +2,7 @@
     @include SectionSize(50rem);
     @include flex(row, space-around, center);
     flex-wrap: wrap;
-    max-width: 122rem;
-    background-color: lightblue;
+    background-color: $formBackgroundColor;
     display: none; /*importent to have the value on one for the onclick function to work*/
         
 
@@ -39,10 +38,6 @@
                 padding: 0.5rem;
             }
 
-            input:focus, textarea:focus{
-                outline: 1px solid  grey;
-            }
-
             input:hover, textarea:hover{
                 background-color: rgb(230, 230, 230);
             }
@@ -67,7 +62,7 @@
 
                     a{
                         text-decoration: none;
-                        color: $mainTextColor;
+                        color: $mainParagraphColor;
                         margin-right: 2rem;
                     }
                         a:hover{

@@ -1,22 +1,26 @@
 /*travle FAQ section*/
 .sectionFour{
-    @include SectionSize(70rem);
-    @include flex(row, space-around, center);
+    @include SectionSize(55rem);
+    @include flex(row, space-between, center);
+    background-color: $orangeBackgroundColor;
 
 
     .faqImageContainer{
-        max-width: 40rem;
-        max-height: 70rem;
+        width:60rem;
+        height: 100%;
+        
 
         img{
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
         }
 
     }
 
     .faqArticle{
-        @include flex(column, space-between, flex-start);
-        max-width: 70rem;
+        @include flex(column, space-between,flex-start);
+        max-width: 50rem;
         height: 50rem;
+        margin-right: 10rem;
     }
 }
