@@ -10,9 +10,7 @@ Situated in Hawaii, USA, the Surfer's Camp arranges social get together's, surfi
 - [General work practise](#generalpractise)
 - [Technologies Used](#technologies)
 
-<a name="layout></a>
-
-## Layout
+## Layout <a name="layout></a>
 
 The web site is a static web site consisting of four pages.
 
@@ -22,8 +20,8 @@ The web site is a static web site consisting of four pages.
   Includes general information about the company and the employees.
 - Contact Us
   Includes a contact form for users to query about upcoming arrangements and company contact information.
-  - Gallery
-    An image gallery of previous arrangements, lessons and camps.
+- Gallery
+  An image gallery of previous arrangements, lessons and camps.
 
 ## Design <a name="design"></a>
 
@@ -59,7 +57,6 @@ in the installation process.
 - Create a folder for storing the repository locally.
 - Open your web browser and enter the GitHub repository’s URL.
 - Click on the button, “Code”, on the right side of the screen, below the “Security” tab<br>
-  ![To clone repo with HTTP](assets/images/clone_http.png)
 - Open the Command Prompt (on Windows) or Terminal (on Mac).
 - In the terminal, navigate to the location in which you would like to store the repository by typing the following command:
   `$ cd <name of directory>`
