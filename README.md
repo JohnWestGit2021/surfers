@@ -10,7 +10,7 @@ Situated in Hawaii, USA, the Surfer's Camp arranges social get together's, surfi
 - [General work practise](#generalpractise)
 - [Technologies Used](#technologies)
 
-## Layout <a name="layout></a>
+## Layout <a name="layout"></a>
 
 The web site is a static web site consisting of four pages.
 
