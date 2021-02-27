@@ -49,7 +49,7 @@ button:focus {
 }
 
 label {
-  color: #000000;
+  color: #5c928f;
 }
 
 /*standard classes*/
@@ -67,7 +67,7 @@ label {
 }
 
 .mainParagraph {
-  color: #000000;
+  color: #5c928f;
 }
 
 .secondParagraph {
@@ -151,7 +151,7 @@ header nav .navList .navList-item {
 
 header nav .navList .navList-item .navLink {
   text-decoration: none;
-  color: #000000;
+  color: #5c928f;
   padding: 1rem;
 }
 
@@ -165,8 +165,8 @@ header nav .navList .navList-item .navLink:hover {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
-  height: 40rem;
-  max-height: 40rem;
+  height: 60rem;
+  max-height: 60rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,8 +184,8 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 .sectionOne .imageSliderContainer {
-  height: 40rem;
-  max-height: 40rem;
+  height: 100%;
+  max-height: 100%;
 }
 
 .sectionOne .imageSliderContainer img {
@@ -355,15 +355,14 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-width: 50rem;
+  max-width: 60rem;
   height: 50rem;
-  margin-right: 10rem;
+  margin: auto;
 }
 
 /*forms*/
@@ -521,7 +520,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #mainCamp-signUpInformation form .firstFormColumn .termsAndSubmit a, #mainCamp-signUpInformation form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #000000;
+  color: #5c928f;
   margin-right: 2rem;
 }
 
@@ -687,7 +686,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #preTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #000000;
+  color: #5c928f;
   margin-right: 2rem;
 }
 
@@ -853,7 +852,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #000000;
+  color: #5c928f;
   margin-right: 2rem;
 }
 
@@ -1019,7 +1018,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #000000;
+  color: #5c928f;
   margin-right: 2rem;
 }
 

@@ -18,9 +18,9 @@
     }
 
     .faqArticle{
-        @include flex(column, space-between,flex-start);
-        max-width: 50rem;
+        @include flex(column, space-around,flex-start);
+        max-width: 60rem;
         height: 50rem;
-        margin-right: 10rem;
+        margin: auto;
     }
 }
