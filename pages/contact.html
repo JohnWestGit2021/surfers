@@ -4,19 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/contact.css" type="text/css" />
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/contact.css" type="text/css" />
     <title>Surfers</title>
   </head>
   <body>
     <!-- Navigation with navlinks -->
     <nav></nav>
     <!-- Main content with header and cards -->
-    <main></main>
+    <main>
+      <header class="header">
+        <div class="header__text">
+          <h1>Have a Question? We're here for you!</h1>
+          <!-- <p>Three or four images with contact deatils address and emails</p> -->
+        </div>
+        <div class="header__cards">
+          <div class="card1">
+            <img
+              class="img--1"
+              src="../images/teacher-one.jpg"
+              alt="Teacher one"
+            />
+            <div><p>Kasey Schollenberger</p></div>
+          </div>
+          <div class="card2">
+            <img
+              class="img--2"
+              src="../images/teacher-two.jpg"
+              alt="Camp owner"
+            />
+            <div><p>Rick Civelli</p></div>
+          </div>
+          <div class="card3">
+            <img
+              class="img--3"
+              src="../images/teacher-three.jpg"
+              alt="Teacher two"
+            />
+            <div><p>McKenzie Botbol</p></div>
+          </div>
+          <div class="card4">
+            <img
+              class="img--4"
+              src="../images/female-card.jpg"
+              alt="Woman administrator"
+            />
+            <div><p>Kailani Davis</p></div>
+          </div>
+        </div>
+      </header>
+    </main>
     <!-- Section with contact form -->
-    <section>
-      <form action=""></form>
+    <section class="grid">
+      <h2>Do you want to be a part of our surf camp!</h2>
+      <p class="mobile-text">
+        Contact us by email and we will send you a registration form!
+      </p>
+      <p class="desktop-text">
+        Fill in your contact details and we will save you a place.
+      </p>
+      <form class="form" action="">
+        <i class="fas fa-user"></i>
+        <label class="label--fname" for="fname">First name</label>
+        <input
+          class="input--fname"
+          type="text"
+          id="fname"
+          name="fname"
+          autofocus
+          required
+        />
+        <label class="label--lname" for="lname">Last name</label>
+        <input
+          class="input--lname"
+          type="text"
+          id="lname"
+          name="lname"
+          required
+        />
+        <i class="fas fa-home"></i>
+        <label class="label--address" for="address">Address</label>
+        <input
+          class="input--address"
+          type="text"
+          id="address"
+          name="address"
+          required
+        />
+        <!-- <label class="label--address2" for="address2">Address line 2</label> -->
+        <input
+          class="input--address2"
+          type="text"
+          id="address2"
+          name="address2"
+        />
+        <label class="label--postal" for="postal">Postal/Zip code</label>
+        <input
+          class="input--postal"
+          type="text"
+          id="postal"
+          name="postal"
+          required
+        />
+        <label class="label--country" for="country">Country</label>
+        <input
+          class="input--country"
+          type="text"
+          id="country"
+          name="country"
+          required
+        />
+        <i class="fas fa-phone"></i>
+        <label class="label--phone" for="phone">Mobile</label>
+        <input
+          class="input--phone"
+          type="number"
+          id="phone"
+          name="phone"
+          required
+        />
+        <i class="fas fa-at"></i>
+        <label class="label--email" for="email">Email</label>
+        <input
+          class="input--email"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <label class="label--age" for="age">Age</label>
+        <input class="input--age" type="number" id="age" name="age" required />
+        <i class="fas fa-pencil-alt"></i>
+        <textarea class="form__text"></textarea>
+      </form>
     </section>
     <!-- Footer -->
-    <footer></footer>
+    <footer>Footer goes in here</footer>
   </body>
 </html>
