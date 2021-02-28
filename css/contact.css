@@ -248,10 +248,10 @@ body {
     display: block;
     grid-area: h;
   }
-  .label--address2 {
+  /* .label--address2 {
     display: block;
     grid-area: ;
-  }
+  } */
   .input--address2 {
     display: block;
     grid-area: i;
