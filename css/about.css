@@ -76,11 +76,18 @@ footer {
     color: white;
     text-align: center;
     height: 200px;
-    background-image: linear-gradient(to bottom, #ff9000, #dc6d3d, #aa453c, #722d35, #502816);
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
+    background: rgba(220,146,35,1);
+    background: -moz-linear-gradient(top, rgba(220,146,35,1) 0%, rgba(21,30,45,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(220,146,35,1)), color-stop(100%, rgba(21,30,45,1)));
+    background: -webkit-linear-gradient(top, rgba(220,146,35,1) 0%, rgba(21,30,45,1) 100%);
+    background: -o-linear-gradient(top, rgba(220,146,35,1) 0%, rgba(21,30,45,1) 100%);
+    background: -ms-linear-gradient(top, rgba(220,146,35,1) 0%, rgba(21,30,45,1) 100%);
+    background: linear-gradient(to bottom, rgba(220,146,35,1) 0%, rgba(21,30,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc9223', endColorstr='#151e2d', GradientType=0 );
  }
 
 
