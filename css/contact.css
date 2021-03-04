@@ -13,6 +13,14 @@
 body {
   box-sizing: border-box; }
 
+.header__text h1 {
+  font-family: "Reggae One", sans-serif;
+  font-size: 5vmin; }
+
+.header__text h1 {
+  font-family: "Reggae One", sans-serif;
+  font-size: 5vmin; }
+
 /* ----- Navigation with navlinks ----- */
 /* ----- Main content with header and cards ----- */
 .header__text {
@@ -20,11 +28,8 @@ body {
   flex-direction: column;
   margin: auto;
   width: 90%;
-  max-width: 50rem;
+  max-width: 70rem;
   text-align: center; }
-
-.header__text h1 {
-  font-size: 6vmin; }
 
 /* ----- Cards ----- */
 .header__cards {
@@ -42,7 +47,7 @@ body {
   background-color: lightgray;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1em; }
+  margin: 1.4em; }
 
 .card2 {
   width: 90%;
@@ -51,7 +56,7 @@ body {
   background-color: lightgray;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1em; }
+  margin: 1.4em; }
 
 .card3 {
   width: 90%;
@@ -60,7 +65,7 @@ body {
   background-color: lightgray;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1em; }
+  margin: 1.4em; }
 
 .card4 {
   width: 90%;
@@ -69,7 +74,7 @@ body {
   background-color: lightgray;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1em; }
+  margin: 1.4em; }
 
 /* ----- Card images ----- */
 .img--1 {
