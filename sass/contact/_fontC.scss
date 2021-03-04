@@ -1,4 +1,12 @@
+@import "colorC";
+
 .header__text h1 {
-  font-family: "Reggae One", sans-serif;
+  font-family: "Original Surfer", sans-serif;
   font-size: 5vmin;
+}
+
+.card-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: $paragraph;
 }

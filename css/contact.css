@@ -14,37 +14,70 @@ body {
   box-sizing: border-box; }
 
 .header__text h1 {
-  font-family: "Reggae One", sans-serif;
+  font-family: "Original Surfer", sans-serif;
   font-size: 5vmin; }
 
+.card-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #555; }
+
 .header__text h1 {
-  font-family: "Reggae One", sans-serif;
+  font-family: "Original Surfer", sans-serif;
   font-size: 5vmin; }
+
+.card-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #555; }
+
+.header__text h1 {
+  font-family: "Original Surfer", sans-serif;
+  font-size: 5vmin; }
+
+.card-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #555; }
+
+.header__text h1 {
+  font-family: "Original Surfer", sans-serif;
+  font-size: 5vmin; }
+
+.card-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: #555; }
 
 /* ----- Navigation with navlinks ----- */
 /* ----- Main content with header and cards ----- */
-.header__text {
+.header {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: space-evenly;
   width: 90%;
-  max-width: 70rem;
-  text-align: center; }
+  max-width: 90rem;
+  min-height: 80rem;
+  margin: auto; }
+  .header__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .header__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto; }
 
 /* ----- Cards ----- */
-.header__cards {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 80rem;
-  margin: 0 auto; }
-
-.card1 {
+.header .card1 {
   width: 90%;
   max-width: 30rem;
   height: 20rem;
-  background-color: lightgray;
+  border: 0.3rem solid #60dad4;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
@@ -53,7 +86,8 @@ body {
   width: 90%;
   max-width: 30rem;
   height: 20rem;
-  background-color: lightgray;
+  border: 0.3rem solid #60dad4;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
@@ -62,7 +96,8 @@ body {
   width: 90%;
   max-width: 30rem;
   height: 20rem;
-  background-color: lightgray;
+  border: 0.3rem solid #60dad4;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
@@ -71,7 +106,8 @@ body {
   width: 90%;
   max-width: 30rem;
   height: 20rem;
-  background-color: lightgray;
+  border: 0.3rem solid #60dad4;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
@@ -103,6 +139,7 @@ body {
   object-fit: cover;
   object-position: top; }
 
+/* ----- Footer ----- */
 /* ----- Section with contact form ----- */
 .grid {
   display: flex;
@@ -203,7 +240,6 @@ body {
 .desktop-text {
   display: none; }
 
-/* ----- Footer ----- */
 /* ----- Media query ----- */
 @media screen and (min-width: 630px) {
   .form {
@@ -236,9 +272,9 @@ body {
     grid-area: h; }
 
   /* .label--address2 {
-    display: block;
-    grid-area: ;
-  } */
+      display: block;
+      grid-area: ;
+    } */
   .input--address2 {
     display: block;
     grid-area: i; }

@@ -1,0 +1,100 @@
+/* ----- Section with contact form ----- */
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.grid h2 {
+  font-size: 3rem;
+  width: 80%;
+}
+.grid p {
+  font-size: 2rem;
+}
+.form {
+  display: grid;
+  width: 96%;
+  height: 100%;
+  max-width: 80rem;
+  gap: 1rem;
+  grid-template-columns: 1, span 4;
+  grid-template-rows: repeat(10, 1fr);
+}
+.form label {
+  font-size: 1.8rem;
+  color: #555;
+}
+.form input {
+  padding: 0.5em;
+  font-size: 1.6rem;
+}
+.label--fname {
+  grid-column: 2 /3;
+  grid-row: 1 /2;
+  align-self: flex-end;
+}
+.input--fname {
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+}
+.label--lname {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: flex-end;
+}
+.input--lname {
+  grid-column: 2 / 6;
+  grid-row: 4 / 5;
+}
+.label--email {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  align-self: flex-end;
+}
+.input--email {
+  grid-column: 2 / 6;
+  grid-row: 6 / 7;
+}
+.form__text {
+  grid-column: 2 / 6;
+  grid-row: 7 / 9;
+}
+.fa-user {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-size: 1.8rem;
+  align-self: flex-end;
+}
+.fa-at {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  font-size: 1.8rem;
+  align-self: flex-end;
+}
+.fa-pencil-alt {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+  font-size: 1.8rem;
+  align-self: flex-end;
+}
+.label--address,
+.input--address,
+.label--address2,
+.input--address2,
+.label--postal,
+.input--postal,
+.label--country,
+.input--country,
+.label--age,
+.input--age,
+.label--phone,
+.input--phone,
+.fa-home,
+.fa-phone,
+.desktop-text {
+  display: none;
+}
