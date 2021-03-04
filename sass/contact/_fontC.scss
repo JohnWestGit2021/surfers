@@ -9,4 +9,24 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   color: $paragraph;
+  padding: 1em;
+}
+
+// Form
+.grid {
+  &__title {
+    text-align: center;
+    font-family: "Original Surfer", sans-serif;
+    font-size: 3vmin;
+  }
+  &__sub {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: $paragraph;
+    padding: 1em;
+  }
+  label {
+    color: $paragraph;
+  }
 }

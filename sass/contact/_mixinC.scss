@@ -3,11 +3,13 @@
 
 // Cards
 @mixin card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 90%;
   max-width: 30rem;
-  height: 20rem;
-  //   background-color: $white;
-  border: 0.3rem solid $base;
+  min-height: 26rem;
+  border: 0.4rem solid $base;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
@@ -16,8 +18,9 @@
 }
 
 @mixin employee-img {
-  width: 10rem;
-  height: 10rem;
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover;
 }

@@ -20,6 +20,20 @@ body {
 .card-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #555;
+  padding: 1em; }
+
+.grid__title {
+  text-align: center;
+  font-family: "Original Surfer", sans-serif;
+  font-size: 3vmin; }
+.grid__sub {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #555;
+  padding: 1em; }
+.grid label {
   color: #555; }
 
 .header__text h1 {
@@ -29,6 +43,20 @@ body {
 .card-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #555;
+  padding: 1em; }
+
+.grid__title {
+  text-align: center;
+  font-family: "Original Surfer", sans-serif;
+  font-size: 3vmin; }
+.grid__sub {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #555;
+  padding: 1em; }
+.grid label {
   color: #555; }
 
 .header__text h1 {
@@ -38,6 +66,20 @@ body {
 .card-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #555;
+  padding: 1em; }
+
+.grid__title {
+  text-align: center;
+  font-family: "Original Surfer", sans-serif;
+  font-size: 3vmin; }
+.grid__sub {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #555;
+  padding: 1em; }
+.grid label {
   color: #555; }
 
 .header__text h1 {
@@ -47,6 +89,20 @@ body {
 .card-paragraph {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #555;
+  padding: 1em; }
+
+.grid__title {
+  text-align: center;
+  font-family: "Original Surfer", sans-serif;
+  font-size: 3vmin; }
+.grid__sub {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #555;
+  padding: 1em; }
+.grid label {
   color: #555; }
 
 /* ----- Navigation with navlinks ----- */
@@ -73,40 +129,52 @@ body {
 
 /* ----- Cards ----- */
 .header .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 90%;
   max-width: 30rem;
-  height: 20rem;
-  border: 0.3rem solid #60dad4;
+  min-height: 26rem;
+  border: 0.4rem solid #60dad4;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
 
 .card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 90%;
   max-width: 30rem;
-  height: 20rem;
-  border: 0.3rem solid #60dad4;
+  min-height: 26rem;
+  border: 0.4rem solid #60dad4;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
 
 .card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 90%;
   max-width: 30rem;
-  height: 20rem;
-  border: 0.3rem solid #60dad4;
+  min-height: 26rem;
+  border: 0.4rem solid #60dad4;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
   margin: 1.4em; }
 
 .card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 90%;
   max-width: 30rem;
-  height: 20rem;
-  border: 0.3rem solid #60dad4;
+  min-height: 26rem;
+  border: 0.4rem solid #60dad4;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   padding: 1em;
@@ -114,27 +182,31 @@ body {
 
 /* ----- Card images ----- */
 .img--1 {
-  width: 10rem;
-  height: 10rem;
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: top; }
 
 .img--2 {
-  width: 10rem;
-  height: 10rem;
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover; }
 
 .img--3 {
-  width: 10rem;
-  height: 10rem;
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover; }
 
 .img--4 {
-  width: 10rem;
-  height: 10rem;
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: top; }
@@ -149,6 +221,10 @@ body {
   width: 90%;
   max-width: 60rem;
   margin: 0 auto; }
+  .grid__bg {
+    background: url("../images/form.jpg") no-repeat center;
+    background-size: cover;
+    background-position: right; }
 
 .grid h2 {
   font-size: 3rem;
