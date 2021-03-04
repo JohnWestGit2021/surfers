@@ -1,19 +1,4 @@
-/* ----- Browser Reset ----- */
-*,
-*::after,
-*::before {
-  margin: 0%;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-:root {
-  font-size: 62.5%;
-  font-family: "Roboto", "Lato", sans-serif;
-}
-body {
-  box-sizing: border-box;
-}
+@import "mixinC";
 
 /* ----- Navigation with navlinks ----- */
 
@@ -40,67 +25,31 @@ body {
   margin: 0 auto;
 }
 .card1 {
-  width: 90%;
-  max-width: 30rem;
-  height: 20rem;
-  background-color: lightgray;
-  border-radius: 1rem;
-  padding: 1em;
-  margin: 1em;
+  @include card;
 }
 .card2 {
-  width: 90%;
-  max-width: 30rem;
-  height: 20rem;
-  background-color: lightgray;
-  border-radius: 1rem;
-  padding: 1em;
-  margin: 1em;
+  @include card;
 }
 .card3 {
-  width: 90%;
-  max-width: 30rem;
-  height: 20rem;
-  background-color: lightgray;
-  border-radius: 1rem;
-  padding: 1em;
-  margin: 1em;
+  @include card;
 }
 .card4 {
-  width: 90%;
-  max-width: 30rem;
-  height: 20rem;
-  background-color: lightgray;
-  border-radius: 1rem;
-  padding: 1em;
-  margin: 1em;
+  @include card;
 }
 
 /* ----- Card images ----- */
 .img--1 {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  object-fit: cover;
+  @include employee-img;
   object-position: top;
 }
 .img--2 {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  object-fit: cover;
+  @include employee-img;
 }
 .img--3 {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  object-fit: cover;
+  @include employee-img;
 }
 .img--4 {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  object-fit: cover;
+  @include employee-img;
   object-position: top;
 }
 /* ----- Section with contact form ----- */

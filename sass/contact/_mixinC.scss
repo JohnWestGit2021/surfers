@@ -1,0 +1,17 @@
+// Cards
+@mixin card {
+  width: 90%;
+  max-width: 30rem;
+  height: 20rem;
+  background-color: lightgray;
+  border-radius: 1rem;
+  padding: 1em;
+  margin: 1em;
+}
+
+@mixin employee-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
