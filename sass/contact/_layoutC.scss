@@ -1,0 +1,60 @@
+@import "mixinC";
+@import "fontC";
+@import "colorC";
+
+/* ----- Navigation with navlinks ----- */
+
+/* ----- Main content with header and cards ----- */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 90rem;
+  min-height: 80rem;
+  margin: auto;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* ----- Cards ----- */
+.header .card1 {
+  @include card;
+}
+.card2 {
+  @include card;
+}
+.card3 {
+  @include card;
+}
+.card4 {
+  @include card;
+}
+
+/* ----- Card images ----- */
+.img--1 {
+  @include employee-img;
+  object-position: top;
+}
+.img--2 {
+  @include employee-img;
+}
+.img--3 {
+  @include employee-img;
+}
+.img--4 {
+  @include employee-img;
+  object-position: top;
+}
+
+/* ----- Footer ----- */
