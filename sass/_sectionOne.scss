@@ -1,0 +1,21 @@
+/* image slider/hero section */
+.sectionOne{
+ @include SectionSize(60rem);
+ @include flex(row, center, flex-start);
+
+    .imageSliderContainer{
+        height: 100%;
+        max-height: 100%;
+         
+        
+        img{
+            width: 100%;
+            max-height: 100%;
+         
+           object-fit: cover;
+            
+        }     
+         
+    }
+
+}
