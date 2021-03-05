@@ -104,18 +104,21 @@
   }
   .fa-user {
     grid-area: a;
+    color: $white;
   }
   .fa-home {
     display: block;
     grid-area: f;
     font-size: 1.8rem;
     align-self: flex-end;
+    color: $white;
   }
   .fa-phone {
     display: block;
     grid-area: n;
     font-size: 1.8rem;
     align-self: flex-end;
+    color: $white;
   }
   .fa-at {
     grid-area: q;
