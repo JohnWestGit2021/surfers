@@ -1,0 +1,108 @@
+/* ----- Browser Reset ----- */
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    /*1 rem = 10px*/
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
+/*colors*/
+$mainColor: #7bd3ce;
+
+$buttonTextColor:#00336d;
+
+$mainHeaderColor: #60dad4; /*this is the main color*/
+$secondHeaderColor:#ffffff;
+$thirdHeaderColor:#ffffff;
+
+$mainParagraphColor:#5c928f;
+
+$orangeBackgroundColor:#FFA14E;
+$whiteBackgroundColor:#ffffff;
+
+$formBackgroundColor:#ececec;
+$formHeaderColor: #000000;
+/*mixins*/
+@mixin SectionSize ($height){
+  max-width: 144rem;/*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: $whiteBackgroundColor;
+  height: $height;
+  max-height: $height;
+  margin: auto;
+}
+@mixin flex ($flex-direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+/*standard tag stylings*/
+
+
+button{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: none;
+  color: $buttonTextColor;
+  border: none;
+  padding: 1rem;
+}
+
+  button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+    button:focus{
+      outline: none;
+      border: 2px solid $buttonTextColor;
+      border-radius: 2rem;
+    }
+  
+
+label{
+  color: $mainParagraphColor;
+}
+
+/*standard classes*/
+.mainHeading{
+  color: $mainHeaderColor;
+  font-family: 'Reggae One', cursive;
+  font-size: 2.3rem;
+  font-weight: 700;
+
+  letter-spacing: 0.35rem;
+}
+
+.secondHeading{
+  color: $secondHeaderColor;
+  font-size: 2rem;
+}
+
+.mainParagraph{
+  color: $mainParagraphColor;
+}
+
+.secondParagraph{
+  color: #f7f7f7;
+}
+.thirdParagraph{
+  color: #f7f7f7;
+}

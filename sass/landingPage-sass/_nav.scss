@@ -1,0 +1,39 @@
+/*navigation section*/
+header{
+    @include SectionSize(10rem);
+    @include flex(row, space-around, center);
+
+    nav{
+        @include flex(row, space-between, center);
+        width: 122rem;
+        max-width: 122rem;
+        min-width: 35rem;
+
+        /*change to svg logo*/
+        .logo{
+            max-width: 20rem;
+            height: auto;
+        }
+
+        .navList{
+            @include flex(row, space-between, center);
+            width: 40rem;
+            max-width: 45rem;
+            min-width: 38rem;
+            
+            .navList-item{
+                list-style: none;
+                
+                .navLink{
+                    text-decoration: none;
+                    color: $mainParagraphColor;
+                    padding: 1rem;
+
+                }
+                    .navLink:hover{
+                        text-decoration: underline;
+                    }
+            }
+        }
+    }
+}
