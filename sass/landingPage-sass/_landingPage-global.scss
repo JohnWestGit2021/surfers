@@ -25,19 +25,20 @@ body {
 /*colors*/
 $mainColor: #7bd3ce;
 
-$buttonTextColor:#00336d;
+$buttonTextColor:#00416d;
 
 $mainHeaderColor: #60dad4; /*this is the main color*/
 $secondHeaderColor:#ffffff;
 $thirdHeaderColor:#ffffff;
 
-$mainParagraphColor:#5c928f;
+$mainParagraphColor:#497976;
 
 $orangeBackgroundColor:#FFA14E;
 $whiteBackgroundColor:#ffffff;
 
-$formBackgroundColor:#ececec;
-$formHeaderColor: #000000;
+$formBackgroundColor:#7597a7;
+$formHeaderColor: #60dad4;
+$formParagraphColor: #ffffff;
 /*mixins*/
 @mixin SectionSize ($height){
   max-width: 144rem;/*may change lager on... depends on what widths the rest of the pages are.*/
@@ -78,7 +79,7 @@ button{
   
 
 label{
-  color: $mainParagraphColor;
+  color: $formParagraphColor;
 }
 
 /*standard classes*/

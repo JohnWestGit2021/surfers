@@ -12,6 +12,11 @@
             height: 35rem;
             max-height: 40rem;
 
+            
+            h2{
+                color: $formHeaderColor;
+            }
+
             .signUpForm_priceChart{
                 @include flex(row, space-between, space-evenly);
                 width: 100%; /*denna förhåller sig till max-width i articlen*/
@@ -21,6 +26,10 @@
                     height: 10rem;
                     max-height: 15rem;
                     list-style: none;
+
+                    li{
+                        color: $mainParagraphColor;
+                    }
                 }
             }
             
