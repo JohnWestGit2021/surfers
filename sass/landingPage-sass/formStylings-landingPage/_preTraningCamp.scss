@@ -17,6 +17,10 @@
                 color: $formHeaderColor;
             }
 
+            p{
+                color: $formParagraphColor;
+            }
+
             .signUpForm_priceChart{
                 @include flex(row, space-between, space-evenly);
                 width: 100%; /*denna förhåller sig till max-width i articlen*/
@@ -28,7 +32,7 @@
                     list-style: none;
 
                     li{
-                        color: $mainParagraphColor;
+                        color: $formParagraphColor;
                     }
                 }
             }
@@ -70,7 +74,7 @@
 
                     a{
                         text-decoration: none;
-                        color: $mainParagraphColor;
+                        color: $formParagraphColor;
                         margin-right: 2rem;
                     }
                         a:hover{
@@ -80,7 +84,9 @@
                 }
 
                 button{
-                    padding: 0.5rem 2rem;
+                    padding: 1rem 5rem;
+                    background-color: $mainColor;
+                    color: $formParagraphColor;
                 }
             }
 

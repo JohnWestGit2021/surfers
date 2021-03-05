@@ -22,6 +22,8 @@ body {
     font-weight: 400;
   }
 
+
+  
 /*colors*/
 $mainColor: #7bd3ce;
 
@@ -39,6 +41,9 @@ $whiteBackgroundColor:#ffffff;
 $formBackgroundColor:#7597a7;
 $formHeaderColor: #60dad4;
 $formParagraphColor: #ffffff;
+
+
+
 /*mixins*/
 @mixin SectionSize ($height){
   max-width: 144rem;/*may change lager on... depends on what widths the rest of the pages are.*/
@@ -85,7 +90,7 @@ label{
 /*standard classes*/
 .mainHeading{
   color: $mainHeaderColor;
-  font-family: 'Reggae One', cursive;
+  font-family: "Original Surfer", sans-serif;
   font-size: 2.3rem;
   font-weight: 700;
 

@@ -1,0 +1,29 @@
+/* image slider/hero section */
+.hero{
+ @include SectionSize(50rem);
+ @include flex(row, center, flex-start);
+ position: relative;
+
+    .imageSliderContainer{
+        height: 100%;
+        max-height: 100%;
+         
+        
+        img{
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            animation: imgSlider 30s linear infinite;
+            
+        }     
+    }
+}
+
+@keyframes imgSlider {
+0%{content: url(../../images/landingPage-img/surfers.jpg);}
+25%{content: url(../../images/landingPage-img/seaLandscape.jpg);}
+50%{content: url(../../images/landingPage-img/camp.jpg);}
+75%{content: url(../../images/landingPage-img/waveSurfer.jpg);}
+100%{content: url(../../images/landingPage-img/campfire.jpg);}
+
+}

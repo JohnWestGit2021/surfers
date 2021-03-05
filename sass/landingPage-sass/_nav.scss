@@ -2,6 +2,7 @@
 header{
     @include SectionSize(10rem);
     @include flex(row, space-around, center);
+    position: relative;
 
     nav{
         @include flex(row, space-between, center);
@@ -11,8 +12,16 @@ header{
 
         /*change to svg logo*/
         .logo{
-            max-width: 20rem;
+            position: relative;
+            z-index: 2;
+            transform: translateY(-2.8rem);
+
+            max-width: 21rem;
             height: auto;
+
+            img{
+                width: 100%;
+            }
         }
 
         .navList{
@@ -26,8 +35,9 @@ header{
                 
                 .navLink{
                     text-decoration: none;
-                    color: $mainParagraphColor;
-                    padding: 1rem;
+                    color: $buttonTextColor;
+                    font-weight: bold;
+                    padding: 1rem;     
 
                 }
                     .navLink:hover{

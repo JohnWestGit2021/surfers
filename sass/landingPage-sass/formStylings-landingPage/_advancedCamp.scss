@@ -12,10 +12,14 @@
             height: 35rem;
             max-height: 40rem;
 
-            
             h2{
                 color: $formHeaderColor;
             }
+
+            p{
+                color: $formParagraphColor;
+            }
+
 
             .signUpForm_priceChart{
                 @include flex(row, space-between, space-evenly);
@@ -28,7 +32,7 @@
                     list-style: none;
 
                     li{
-                        color: $mainParagraphColor;
+                        color: $formParagraphColor;
                     }
                 }
             }
@@ -71,7 +75,7 @@
 
                     a{
                         text-decoration: none;
-                        color: $mainParagraphColor;
+                        color: $formParagraphColor;
                         margin-right: 2rem;
                     }
                         a:hover{
@@ -81,7 +85,9 @@
                 }
 
                 button{
-                    padding: 0.5rem 2rem;
+                    padding: 1rem 5rem;
+                    background-color: $mainColor;
+                    color: $formParagraphColor;
                 }
             }
 

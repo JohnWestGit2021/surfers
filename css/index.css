@@ -55,7 +55,7 @@ label {
 /*standard classes*/
 .mainHeading {
   color: #60dad4;
-  font-family: 'Reggae One', cursive;
+  font-family: "Original Surfer", sans-serif;
   font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 0.35rem;
@@ -99,6 +99,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 header nav {
@@ -122,8 +123,16 @@ header nav {
 }
 
 header nav .logo {
-  max-width: 20rem;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translateY(-2.8rem);
+          transform: translateY(-2.8rem);
+  max-width: 21rem;
   height: auto;
+}
+
+header nav .logo img {
+  width: 100%;
 }
 
 header nav .navList {
@@ -151,7 +160,8 @@ header nav .navList .navList-item {
 
 header nav .navList .navList-item .navLink {
   text-decoration: none;
-  color: #497976;
+  color: #00416d;
+  font-weight: bold;
   padding: 1rem;
 }
 
@@ -161,12 +171,12 @@ header nav .navList .navList-item .navLink:hover {
 
 /*sections*/
 /* image slider/hero section */
-.sectionOne {
+.hero {
   max-width: 144rem;
   /*may change lager on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
-  height: 60rem;
-  max-height: 60rem;
+  height: 50rem;
+  max-height: 50rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,43 +191,56 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: relative;
 }
 
-.sectionOne .imageSliderContainer {
+.hero .imageSliderContainer {
   height: 100%;
   max-height: 100%;
 }
 
-.sectionOne .imageSliderContainer img {
+.hero .imageSliderContainer img {
   width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-animation: imgSlider 3s linear infinite;
-          animation: imgSlider 3s linear infinite;
+  -webkit-animation: imgSlider 30s linear infinite;
+          animation: imgSlider 30s linear infinite;
 }
 
 @-webkit-keyframes imgSlider {
   0% {
-    content: url(../../images/landingPage-img/surfgroup.jpg);
-  }
-  50% {
     content: url(../../images/landingPage-img/surfers.jpg);
   }
+  25% {
+    content: url(../../images/landingPage-img/seaLandscape.jpg);
+  }
+  50% {
+    content: url(../../images/landingPage-img/camp.jpg);
+  }
+  75% {
+    content: url(../../images/landingPage-img/waveSurfer.jpg);
+  }
   100% {
-    content: url(../../images/landingPage-img/temp.jpg);
+    content: url(../../images/landingPage-img/campfire.jpg);
   }
 }
 
 @keyframes imgSlider {
   0% {
-    content: url(../../images/landingPage-img/surfgroup.jpg);
-  }
-  50% {
     content: url(../../images/landingPage-img/surfers.jpg);
   }
+  25% {
+    content: url(../../images/landingPage-img/seaLandscape.jpg);
+  }
+  50% {
+    content: url(../../images/landingPage-img/camp.jpg);
+  }
+  75% {
+    content: url(../../images/landingPage-img/waveSurfer.jpg);
+  }
   100% {
-    content: url(../../images/landingPage-img/temp.jpg);
+    content: url(../../images/landingPage-img/campfire.jpg);
   }
 }
 
@@ -621,6 +644,10 @@ header nav .navList .navList-item .navLink:hover {
   color: #60dad4;
 }
 
+#preTraning-signUpForm article p {
+  color: #ffffff;
+}
+
 #preTraning-signUpForm article .signUpForm_priceChart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,7 +686,7 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #preTraning-signUpForm article .signUpForm_priceChart ul li {
-  color: #497976;
+  color: #ffffff;
 }
 
 #preTraning-signUpForm form {
@@ -734,7 +761,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #preTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #preTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #497976;
+  color: #ffffff;
   margin-right: 2rem;
 }
 
@@ -743,7 +770,9 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #preTraning-signUpForm form .firstFormColumn button, #preTraning-signUpForm form .secondFormColumn button {
-  padding: 0.5rem 2rem;
+  padding: 1rem 5rem;
+  background-color: #7bd3ce;
+  color: #ffffff;
 }
 
 #advancedTraning-signUpForm {
@@ -795,6 +824,10 @@ header nav .navList .navList-item .navLink:hover {
   color: #60dad4;
 }
 
+#advancedTraning-signUpForm article p {
+  color: #ffffff;
+}
+
 #advancedTraning-signUpForm article .signUpForm_priceChart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,7 +866,7 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #advancedTraning-signUpForm article .signUpForm_priceChart ul li {
-  color: #497976;
+  color: #ffffff;
 }
 
 #advancedTraning-signUpForm form {
@@ -908,7 +941,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #advancedTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #advancedTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #497976;
+  color: #ffffff;
   margin-right: 2rem;
 }
 
@@ -917,7 +950,9 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #advancedTraning-signUpForm form .firstFormColumn button, #advancedTraning-signUpForm form .secondFormColumn button {
-  padding: 0.5rem 2rem;
+  padding: 1rem 5rem;
+  background-color: #7bd3ce;
+  color: #ffffff;
 }
 
 #weeklyTraning-signUpForm {
@@ -969,6 +1004,10 @@ header nav .navList .navList-item .navLink:hover {
   color: #60dad4;
 }
 
+#weeklyTraning-signUpForm article p {
+  color: #ffffff;
+}
+
 #weeklyTraning-signUpForm article .signUpForm_priceChart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,7 +1046,7 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #weeklyTraning-signUpForm article .signUpForm_priceChart ul li {
-  color: #497976;
+  color: #ffffff;
 }
 
 #weeklyTraning-signUpForm form {
@@ -1082,7 +1121,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #weeklyTraning-signUpForm form .firstFormColumn .termsAndSubmit a, #weeklyTraning-signUpForm form .secondFormColumn .termsAndSubmit a {
   text-decoration: none;
-  color: #497976;
+  color: #ffffff;
   margin-right: 2rem;
 }
 
@@ -1091,7 +1130,9 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 #weeklyTraning-signUpForm form .firstFormColumn button, #weeklyTraning-signUpForm form .secondFormColumn button {
-  padding: 0.5rem 2rem;
+  padding: 1rem 5rem;
+  background-color: #7bd3ce;
+  color: #ffffff;
 }
 
 /*footer*/
