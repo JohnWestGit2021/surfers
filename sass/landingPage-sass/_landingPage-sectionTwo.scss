@@ -1,20 +1,8 @@
 /*Main camp sections*/
 .sectionTwo{
-    @include SectionSize(60rem);
-    @include flex(row, space-around, center);
+    @include SectionSize(80rem);
+    @include flex(row, space-evenly, center);
     background-color: $whiteBackgroundColor;
-
-    .sectionTwo-article_image{
-        max-width: 35rem;
-        
-
-        img{
-        width: 100%;
-        border-radius: 1rem; 
-
-        }
-
-    }
 
     .mainCampArticle{
         @include flex(column, space-between, flex-start);
@@ -30,3 +18,17 @@
         }
     }
 }
+
+    .sectionTwo-article_image{
+        max-width: 35rem;
+        
+
+        img{
+        width: 100%;
+        border-radius: 0.8rem; 
+
+        }
+
+    }
+
+  

@@ -18,7 +18,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #e0e0e0;
+  background-color: #efefef;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -82,7 +82,7 @@ label {
 /*navigation section*/
 header {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
   height: 10rem;
   max-height: 10rem;
@@ -173,7 +173,7 @@ header nav .navList .navList-item .navLink:hover {
 /* image slider/hero section */
 .hero {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
@@ -195,13 +195,13 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 .hero .imageSliderContainer {
-  height: 100%;
   max-height: 100%;
 }
 
 .hero .imageSliderContainer img {
   width: 100%;
-  max-height: 100%;
+  max-width: 100%;
+  height: 50rem;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: imgSlider 30s linear infinite;
@@ -210,47 +210,47 @@ header nav .navList .navList-item .navLink:hover {
 
 @-webkit-keyframes imgSlider {
   0% {
-    content: url(../../images/landingPage-img/surfers.jpg);
+    content: url(../images/landingPage-img/surfers.jpg);
   }
   25% {
-    content: url(../../images/landingPage-img/seaLandscape.jpg);
+    content: url(../images/landingPage-img/seaLandscape.jpg);
   }
   50% {
-    content: url(../../images/landingPage-img/camp.jpg);
+    content: url(../images/landingPage-img/camp.jpg);
   }
   75% {
-    content: url(../../images/landingPage-img/waveSurfer.jpg);
+    content: url(../images/landingPage-img/waveSurfer.jpg);
   }
   100% {
-    content: url(../../images/landingPage-img/campfire.jpg);
+    content: url(../images/landingPage-img/campfire.jpg);
   }
 }
 
 @keyframes imgSlider {
   0% {
-    content: url(../../images/landingPage-img/surfers.jpg);
+    content: url(../images/landingPage-img/surfers.jpg);
   }
   25% {
-    content: url(../../images/landingPage-img/seaLandscape.jpg);
+    content: url(../images/landingPage-img/seaLandscape.jpg);
   }
   50% {
-    content: url(../../images/landingPage-img/camp.jpg);
+    content: url(../images/landingPage-img/camp.jpg);
   }
   75% {
-    content: url(../../images/landingPage-img/waveSurfer.jpg);
+    content: url(../images/landingPage-img/waveSurfer.jpg);
   }
   100% {
-    content: url(../../images/landingPage-img/campfire.jpg);
+    content: url(../images/landingPage-img/campfire.jpg);
   }
 }
 
 /*Main camp sections*/
 .sectionTwo {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
-  height: 60rem;
-  max-height: 60rem;
+  height: 80rem;
+  max-height: 80rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,21 +259,13 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-}
-
-.sectionTwo .sectionTwo-article_image {
-  max-width: 35rem;
-}
-
-.sectionTwo .sectionTwo-article_image img {
-  width: 100%;
-  border-radius: 1rem;
 }
 
 .sectionTwo .mainCampArticle {
@@ -304,13 +296,22 @@ header nav .navList .navList-item .navLink:hover {
       align-self: flex-end;
 }
 
+.sectionTwo-article_image {
+  max-width: 35rem;
+}
+
+.sectionTwo-article_image img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
 /*secondary camps column section*/
 .sectionThree {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
-  height: 35rem;
-  max-height: 35rem;
+  height: 40rem;
+  max-height: 40rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,10 +366,10 @@ header nav .navList .navList-item .navLink:hover {
 /*travle FAQ section*/
 .sectionFour {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
-  height: 55rem;
-  max-height: 55rem;
+  height: 50rem;
+  max-height: 50rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,8 +388,21 @@ header nav .navList .navList-item .navLink:hover {
 }
 
 .sectionFour .faqImageContainer {
-  width: 60rem;
+  width: 51rem;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sectionFour .faqImageContainer img {
@@ -404,20 +418,21 @@ header nav .navList .navList-item .navLink:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 60rem;
-  height: 50rem;
+  height: 45rem;
   margin: auto;
 }
 
 /*forms*/
 #mainCamp-signUpInformation {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
@@ -597,7 +612,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #preTraning-signUpForm {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
@@ -777,7 +792,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #advancedTraning-signUpForm {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;
@@ -957,7 +972,7 @@ header nav .navList .navList-item .navLink:hover {
 
 #weeklyTraning-signUpForm {
   max-width: 144rem;
-  /*may change lager on... depends on what widths the rest of the pages are.*/
+  /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
   height: 50rem;
   max-height: 50rem;

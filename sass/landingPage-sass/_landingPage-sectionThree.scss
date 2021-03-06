@@ -1,6 +1,6 @@
 /*secondary camps column section*/
 .sectionThree{
-    @include SectionSize(35rem);
+    @include SectionSize(40rem);
     @include flex(row, space-evenly, center);
     background-color: $mainColor;
 

@@ -15,7 +15,7 @@ html{
 
 body {
     box-sizing: border-box;
-    background-color: #e0e0e0;
+    background-color: #efefef;
 
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -46,7 +46,7 @@ $formParagraphColor: #ffffff;
 
 /*mixins*/
 @mixin SectionSize ($height){
-  max-width: 144rem;/*may change lager on... depends on what widths the rest of the pages are.*/
+  max-width: 144rem;/*may change later on... depends on what widths the rest of the pages are.*/
   background-color: $whiteBackgroundColor;
   height: $height;
   max-height: $height;
