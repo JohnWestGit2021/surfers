@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+}
+
+.right__logo{
+    height: 200px !important;
+    width: 200px !important;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.gallery_head{
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Reggae One', cursive;
+    font-size: 60px;
+    padding-bottom: 100px;
+    /* color: #462d07; */ 
+
+}
+
+.gallery{
+    width: 100%;
+    padding: 0 150px;
+    margin: auto;
+    
+}
+
+.gallery .instructors_text{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.gallery .r_head.stu{
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.gallery .row1{
+    margin-top: 20px;
+}
+
+.gallery .row1 .imgs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.gallery .row2 .imgs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.gallery .row1 .imgs .img .des{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 210px;
+}
+.gallery .row2 .imgs .img .des{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 210px;
+}
+
+.gallery .row1 img:not(:last-child){
+    margin-right: 20px;
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+}
+
+.gallery .row2{
+    margin-top: 20px;
+}
+
+.gallery .row2 .imgs{
+    display: flex;
+    
+}
+.gallery .row2 .imgs .img .des{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.gallery .row2 img:not(:last-child){
+    margin-right: 20px;
+}
+
