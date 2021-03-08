@@ -2,43 +2,41 @@
 @import "fontC";
 @import "colorC";
 
-/* ----- Navigation with navlinks ----- */
+.logo {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+}
 
 /* ----- Main content with header and cards ----- */
 .header {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-evenly;
-  width: 95%;
-  // max-width: 90rem;
-  // min-height: 80rem;
+  width: 100%;
+  min-height: 50vh;
   margin: auto;
-  position: relative;
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 90%;
-    max-width: 90rem;
-    min-height: 80rem;
-    margin: auto;
-    position: relative;
-  }
+  margin-top: 3vmin;
+  display: flex;
+  flex-direction: column;
   &__text {
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: relative;
   }
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 100%;
+    background-color: $ochra;
+    margin: auto;
+  }
+
   &__cards {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    position: relative;
   }
 }
 /* ----- Cards ----- */
@@ -71,4 +69,37 @@
   object-position: top;
 }
 
-/* ----- Footer ----- */
+.images__bg {
+  background: url("../images/boards.jpg") no-repeat center;
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+}
+
+// Contact
+.contact {
+  width: 100%;
+  min-height: 50vh;
+  background: $paragraph;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  &__map {
+    background: url("../images/map.png") no-repeat center;
+    background-size: cover;
+    width: 40rem;
+    height: 40rem;
+  }
+  i:hover {
+    color: $ochra;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+  }
+}

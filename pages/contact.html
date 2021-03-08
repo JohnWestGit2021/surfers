@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Come join our Teen hawaii & Adventure Camp for the two week surf experience of a lifetime! This adventure is for beginner to advanced surfers ages 14-18 who want to learn how to surf or improve their skills while being immersed in the culture of Hawaii. Come have the time of your life while surfing several of Hawii best breaks and exploring the Pahoa region hawaii style!"
+    />
+    <meta
+      property="og:description"
+      content="Come join our Teen hawaii & Adventure Camp for the two week surf experience of a lifetime! This adventure is for beginner to advanced surfers ages 14-18 who want to learn how to surf or improve their skills while being immersed in the culture of Hawaii. Come have the time of your life while surfing several of Hawii best breaks and exploring the Pahoa region hawaii style!"
+    />
+    <meta
+      property="twitter:description"
+      content="Come join our Teen hawaii & Adventure Camp for the two week surf experience of a lifetime! This adventure is for beginner to advanced surfers ages 14-18 who want to learn how to surf or improve their skills while being immersed in the culture of Hawaii. Come have the time of your life while surfing several of Hawii best breaks and exploring the Pahoa region hawaii style!"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -17,20 +29,41 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/index.css" type="text/css" />
     <link rel="stylesheet" href="../css/contact.css" type="text/css" />
+    <link rel="icon" href="../images/favicon/favicon-32x32.png" />
     <title>Surfers</title>
   </head>
   <body>
     <!-- Navigation with navlinks -->
-    <nav></nav>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="../images/logo-svg/logo.svg" alt="logo" />
+        </div>
+        <ul class="navList">
+          <li class="navList-item">
+            <a href="../index.html" class="navLink">Home</a>
+          </li>
+          <li class="navList-item">
+            <a href="about.html" class="navLink">About us</a>
+          </li>
+          <li class="navList-item">
+            <a href="gallery.html" class="navLink">Gallery</a>
+          </li>
+          <li class="navList-item">
+            <a href="#" class="navLink">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- Main content with header and cards -->
     <main>
-      <header class="header">
+      <section class="header">
+        <div class="header__text">
+          <h1>Have a Question? We're here for you!</h1>
+        </div>
         <div class="header__wrapper">
-          <div class="header__text">
-            <h1>Have a Question? We're here for you!</h1>
-            <!-- <p>Three or four images with contact deatils address and emails</p> -->
-          </div>
           <div class="header__cards">
             <div class="card1 card-paragraph">
               <img
@@ -38,6 +71,7 @@
                 src="../images/about-us-img/teacher-one.jpg"
                 alt="Teacher one"
               />
+              <hr />
               <div>
                 <p>Kasey Schollenberger</p>
                 <p>Email: kasey@surfers.io</p>
@@ -51,6 +85,7 @@
                 src="../images/about-us-img/teacher-two.jpg"
                 alt="Camp owner"
               />
+              <hr />
               <div>
                 <p>Rick Civelli</p>
                 <p>Email: rick@surfers.io</p>
@@ -64,6 +99,7 @@
                 src="../images/about-us-img/teacher-three.jpg"
                 alt="Teacher two"
               />
+              <hr />
               <div>
                 <p>McKenzie Botbol</p>
 
@@ -78,6 +114,7 @@
                 src="../images/female-card.jpg"
                 alt="Woman administrator"
               />
+              <hr />
               <div>
                 <p>Kailani Davis</p>
                 <p>Email: kailani@surfers.io</p>
@@ -87,11 +124,25 @@
             </div>
           </div>
         </div>
-      </header>
+      </section>
     </main>
+    <div class="images__bg"></div>
     <!-- Section with contact details -->
+    <section class="contact">
+      <div class="contact__map"></div>
+      <div class="contact__text">
+        <h3 class="contact__title">Come and visit us!</h3>
+        <p class="contact__paragraph">
+          <i class="fas fa-map-marked-alt"></i>
+          132-101 Kalapana - Kapoho Rd, Pāhoa, HI 9678, United States
+        </p>
+        <p class="contact__paragraph">
+          <i class="fas fa-phone"></i> 555 - 223 673
+        </p>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer>Footer goes in here</footer>
+    <footer></footer>
   </body>
 </html>

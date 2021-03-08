@@ -7,7 +7,6 @@ Situated in Hawaii, USA, the Surfer's Camp arranges social get together's, surfi
 - [Layout](#layout)
 - [Design](#design)
 - [UX/UI](#ux/ui)
-- [General work practise](#generalpractise)
 - [Technologies Used](#technologies)
 
 ## Layout <a name="layout"></a>
@@ -19,7 +18,7 @@ The web site is a static web site consisting of four pages.
 - About Us
   Includes general information about the company and the employees.
 - Contact Us
-  Includes a contact form for users to query about upcoming arrangements and company contact information.
+  Includes contact information over employees and company adress information. Visually presented by a google map image of location.
 - Gallery
   An image gallery of previous arrangements, lessons and camps.
 
@@ -38,8 +37,6 @@ _*Persona One*_
 _*Persona Two*_
 
 > I am a teenager on vacation with my family. I would like to spend some days of the vacation on a daytime activity with other kids in my own age. I want to learn something new and spend a couple of days on my vacation for the activities. I browse the Web for inspiration and look for different types of sports. I am looking for a typical summer activity.
-
-## General work practise <a name="generalpractise"></a>
 
 ### Languages
 
@@ -82,6 +79,7 @@ Following steps will be taken to fork the repository (recreate my own copy to ke
 - Tiny.png, compress images
 - Favicon.io, favicon generator
 - Figma wireframing tool
+- Autoprefixer
 
 ### Validators to use
 
