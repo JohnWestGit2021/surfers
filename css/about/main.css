@@ -1,0 +1,300 @@
+/* global */
+/* ----- Browser Reset ----- */
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /*1 rem = 10px*/ }
+
+body {
+  box-sizing: border-box;
+  background-color: #e0e0e0;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+/*colors*/
+/*this is the main color*/
+/*mixins*/
+/*standard tag stylings*/
+button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: none;
+  color: #00416d;
+  border: none;
+  padding: 1rem; }
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline; }
+
+button:focus {
+  outline: none;
+  border: 2px solid #00416d;
+  border-radius: 2rem; }
+
+label {
+  color: #ffffff; }
+
+/*standard classes*/
+.mainHeading {
+  color: #60dad4;
+  font-family: "Original Surfer", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.35rem; }
+
+.secondHeading {
+  color: #ffffff;
+  font-size: 2rem; }
+
+.mainParagraph {
+  color: #497976; }
+
+.secondParagraph {
+  color: #f7f7f7; }
+
+.thirdParagraph {
+  color: #f7f7f7; }
+
+/*nav*/
+/*navigation section*/
+header {
+  max-width: 144rem;
+  /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
+  height: 10rem;
+  max-height: 10rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 122rem;
+    max-width: 122rem;
+    min-width: 35rem;
+    /*change to svg logo*/ }
+    header nav .logo {
+      position: relative;
+      z-index: 2;
+      transform: translateY(-2.8rem);
+      max-width: 21rem;
+      height: auto; }
+      header nav .logo img {
+        width: 100%; }
+    header nav .navList {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 40rem;
+      max-width: 45rem;
+      min-width: 38rem; }
+      header nav .navList .navList-item {
+        list-style: none; }
+        header nav .navList .navList-item .navLink {
+          text-decoration: none;
+          color: #00416d;
+          font-weight: bold;
+          padding: 1rem; }
+        header nav .navList .navList-item .navLink:hover {
+          text-decoration: underline; }
+
+/*sections*/
+/* image slider/hero section */
+.hero {
+  max-width: 144rem;
+  /*may change lager on... depends on what widths the rest of the pages are.*/
+  background-color: #ffffff;
+  height: 50rem;
+  max-height: 50rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative; }
+  .hero .imageSliderContainer {
+    height: 100%;
+    max-height: 100%; }
+    .hero .imageSliderContainer img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      animation: imgSlider 30s linear infinite; }
+
+@keyframes imgSlider {
+  0% {
+    content: url(../../images/landingPage-img/surfers.jpg); }
+  25% {
+    content: url(../../images/landingPage-img/seaLandscape.jpg); }
+  50% {
+    content: url(../../images/landingPage-img/camp.jpg); }
+  75% {
+    content: url(../../images/landingPage-img/waveSurfer.jpg); }
+  100% {
+    content: url(../../images/landingPage-img/campfire.jpg); } }
+h2 {
+  font-family: "Original Surfer", sans-serif;
+  font-size: 2rem; }
+
+main {
+  max-width: 144rem;
+  background-color: #ffffff;
+  margin: auto;
+  position: relative; }
+
+main h2.top_heading {
+  font-family: "Original Surfer", sans-serif;
+  color: #60dad4;
+  text-align: center;
+  padding-top: 30px; }
+
+section.about-us-introduction {
+  display: flex;
+  padding: 40px 0px 80px;
+  width: 130rem;
+  margin: auto; }
+  section.about-us-introduction .about_top_img {
+    flex: 1.3;
+    margin-right: 40px;
+    margin-top: 20px; }
+    section.about-us-introduction .about_top_img img {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      flex: 1;
+      display: block;
+      width: 100%; }
+  section.about-us-introduction .about-us-introduction-text {
+    flex: 1; }
+    section.about-us-introduction .about-us-introduction-text p {
+      color: #497976;
+      margin: 20px 0px; }
+
+#textone, #texttwo, #textthree {
+  display: none; }
+
+.about-us-team {
+  padding: 40px 0px 100px; }
+  .about-us-team .our-team-title {
+    color: #60dad4;
+    text-align: center;
+    margin-bottom: 30px; }
+  .about-us-team .row {
+    display: flex;
+    margin: 0px 5rem; }
+    .about-us-team .row .column {
+      width: 33%;
+      text-align: center;
+      margin: 0px 5rem; }
+      .about-us-team .row .column .card {
+        background: #FFA14E;
+        padding: 20px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+        .about-us-team .row .column .card .img_card {
+          width: calc(100% + 40px);
+          border-top-right-radius: 15px;
+          border-top-left-radius: 15px;
+          max-height: 500px;
+          overflow: hidden;
+          margin-bottom: 20px; }
+        .about-us-team .row .column .card img {
+          width: 100%; }
+        .about-us-team .row .column .card h3 {
+          font-size: 2rem;
+          padding: 12px 0px;
+          color: #ffffff; }
+        .about-us-team .row .column .card h4 {
+          font-size: 1.7rem;
+          padding-bottom: 20px;
+          color: #ffffff; }
+        .about-us-team .row .column .card .text_area {
+          min-height: 200px; }
+        .about-us-team .row .column .card p {
+          text-align: left;
+          color: #00416d; }
+        .about-us-team .row .column .card button {
+          cursor: pointer;
+          border: 2px solid #00416d;
+          border-radius: 2rem;
+          margin-top: 20px;
+          transition: all 0.5s ease-out; }
+        .about-us-team .row .column .card button:focus {
+          outline: none;
+          text-decoration: none; }
+        .about-us-team .row .column .card:hover button {
+          background: #00416d;
+          color: #ffffff;
+          transition: all 0.5s ease-out; }
+
+footer {
+  max-width: 144rem;
+  background-color: #7bd3ce;
+  margin: auto;
+  position: relative; }
+  footer .foote_container {
+    max-width: 122rem;
+    margin: 0px auto;
+    padding: 80px 0px;
+    display: flex; }
+    footer .foote_container .left_footer {
+      flex: 1;
+      text-align: center; }
+      footer .foote_container .left_footer a {
+        font-size: 30px;
+        width: 55px;
+        padding: 10px;
+        color: #ffffff;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        margin: 0px 10px;
+        border-radius: 10px; }
+        footer .foote_container .left_footer a.fa-facebook {
+          background: #3B5998;
+          color: white; }
+        footer .foote_container .left_footer a.fa-twitter {
+          background: #55ACEE; }
+        footer .foote_container .left_footer a.fa-youtube {
+          background: #bb0000; }
+        footer .foote_container .left_footer a.fa-instagram {
+          background: #125688; }
+      footer .foote_container .left_footer .social-media {
+        align-items: center;
+        flex-direction: column; }
+      footer .foote_container .left_footer .rights {
+        text-align: center;
+        vertical-align: bottom;
+        padding-top: 50px; }
+    footer .foote_container .footer_links {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer .foote_container .footer_links li {
+        list-style: none;
+        padding: 2px; }
+        footer .foote_container .footer_links li a {
+          color: #ffffff;
+          padding: 3px 10px;
+          font-size: 18px;
+          display: inline-block;
+          text-decoration: none;
+          transition: all 0.5s ease-out; }
+          footer .foote_container .footer_links li a:hover {
+            color: #00416d;
+            transition: all 0.5s ease-out; }
+
+/*# sourceMappingURL=main.css.map */

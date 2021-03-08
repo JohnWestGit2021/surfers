@@ -15,31 +15,63 @@
     <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+        <!--fonts-->
+    <!--roboto 400,500,700-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <!--reggae one, 400-->
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Reggae+One&display=swap"
+     rel="stylesheet"
+   />
+ <!--styleSheets-->
+ <link rel="stylesheet" href="../css/about/main.css">
+ <link rel="stylesheet" href="../css/about/responsive.css">
 </head>
 <body>
 
+          <!--hero of landing page-->
+          <section class="hero">
+            <!--this might not be needed - depends if i can make it work-->
+            <div class="imageSliderContainer">
+                <img src="../images/landingPage-img/surfers.jpg" alt="surfer" class="slider-standard">
+            </div>
+          </section>
     <header>
+
         <nav>
-            
+          <div class="logo"><img src="../images/logo-svg/logo.svg" alt="logo"></div>
+          <ul class="navList">
+            <li class="navList-item"><a href="../index.html" class="navLink">Home</a></li>
+            <li class="navList-item"><a href="../pages/about.html" class="navLink">About us</a></li>
+            <li class="navList-item"><a href="#" class="navLink">Gallery</a></li>
+            <li class="navList-item"><a href="../pages/contact.html" class="navLink">Contact us</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
+
     <main>
+
+        <h2 class="top_heading">Why Surfers Camp?</h2>
         <section class="about-us-introduction">
-            <img class="instructor_img" src="../images/about-us-img/instructor.jpg" alt="instructor">
+            <div class="about_top_img">
+                <img class="instructor_img" src="../images/about-us-img/instructor.jpg" alt="instructor">
+            </div>
             <div class="about-us-introduction-text">
-            <h2>Why Surfers Camp?</h2>
-            <p>We are a family owned and operated company with clear cut priorities and an ambitious mission statement.
-                Each year we raise the bar in regard to risk management, staff training, curriculum, and pure ocean fun. 
-                 We make it look easy, but there is an incredible amount of work behind the scenes. We take extreme pride in what we do, 
-                and we do it for all the right reasons. Our dedication and true desire to be the best has made us the most recommended camp of our kind. 
-                Our continued dedication to leading the pack is something we are very proud of and something you can count on. 
-                Our founder has been teaching people how to surf since 1995. He has developed an amazing methodology that will get you up and riding in no time. 
-                He also understands that there is so much more to surfing then standing on a board and riding a wave. 
-                Being a surfer means being responsible to and for other surfers in the water and a dedication to taking care of our coast. 
-                That is why in all of our programs we emphasize safety, surfing etiquette, and dynamic lessons about our coastal environment. 
-                In our programs you will catch all the waves your body can stand while our expert coaches fill your mind with knowledge and your spirit with stoke. 
-                When you leave our program you will have an understanding of why surfers are surfers and why we have uncompromising 
-                commitments to coastal conservation. </p>
+                <p>We are a family owned and operated company with clear cut priorities and an ambitious mission statement.
+                    Each year we raise the bar in regard to risk management, staff training, curriculum, and pure ocean fun. 
+                     We make it look easy, but there is an incredible amount of work behind the scenes. We take extreme pride in what we do, 
+                    and we do it for all the right reasons. Our dedication and true desire to be the best has made us the most recommended camp of our kind. 
+                    Our continued dedication to leading the pack is something we are very proud of and something you can count on. 
+                    Our founder has been teaching people how to surf since 1995. He has developed an amazing methodology that will get you up and riding in no time. 
+                    He also understands that there is so much more to surfing then standing on a board and riding a wave. 
+                    Being a surfer means being responsible to and for other surfers in the water and a dedication to taking care of our coast. 
+                    That is why in all of our programs we emphasize safety, surfing etiquette, and dynamic lessons about our coastal environment. 
+                    In our programs you will catch all the waves your body can stand while our expert coaches fill your mind with knowledge and your spirit with stoke. 
+                    When you leave our program you will have an understanding of why surfers are surfers and why we have uncompromising 
+                    commitments to coastal conservation. </p>
             </div>
         </section>
         <section class="about-us-team">
@@ -47,41 +79,53 @@
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <img src="../images/about-us-img/teacher-one.jpg" alt="Avatar">
+                        <div class="img_card">
+                            <img src="../images/about-us-img/teacher-one.jpg" alt="Avatar">
+                        </div>
                         <h3><b>Kasey Schollenberger </b></h3>
                         <h4><b>Pre-training camp leader </b></h4> 
+                        <div class="text_area">
                         <p>Kasey was born and raised in Honolulu , Hawaii. Ever since she could remember, she was in the water and on a surfboard, 
                             as her parents instilled a love for the ocean in her at a young age. In the summertime.  Kasey loves spending time with her
-                            family and friends, adventuring with her dogs, surfing, snowboarding, traveling, and CrossFit. 
-                            This will be McKenzie’s second year as a Pre-training camp leader. She is very excited to continue sharing her love and knowledge 
-                            of the local beaches, conservation, and surfing.</p> 
+                            family and friends, adventuring with her dogs, surfing, snowboarding, traveling,  and CrossFit.
+                            <span id="textone">  This will be McKenzie’s second year as a Pre-training camp leader. She is very excited to continue sharing her love and knowledge 
+                            of the local beaches, conservation, and surfing.</span></p> <button id="toggleone">Read More</button>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../images/about-us-img/teacher-two.jpg" alt="Avatar">
+                        <div class="img_card">
+                            <img src="../images/about-us-img/teacher-two.jpg" alt="Avatar">
+                        </div>
                         <h3><b>Rick Civelli</b></h3> 
                         <h4><b>Founder/President</b></h4>
+                        <div class="text_area">
                         <p>As a kid, Rick Civelli spent his summers clamming, fishing, and of course surfing. Without realizing it, his appreciation for 
                             environmental conservation was ingrained before his teens. He graduated from UNC-Wilmington with his Bachelors in Environmental Studies. 
-                            During college and after graduation he worked as a marine science educator at the North Carolina Aquarium at Fort Fisher. 
-                            For three years he developed and facilitated programs while teaching thousands of adults and children about the wonders of our coastal 
+                            During college and after graduation he worked as a marine science educator at the North 
+                            <span id="texttwo"> Carolina Aquarium at Fort Fisher. For three years he developed and facilitated programs while teaching thousands of adults and children about the wonders of our coastal 
                             ecosystems. In the winter of 1995, Rick developed a marine science educational learn to surf program for our local aquarium which he 
                             called “Surf’s Up”. Since then he has taught thousands of students of all ages the sport of surfing while enlightening them of the
-                            wonders of our coastal environment. </p> 
+                            wonders of our coastal environment.</span> </p>  <button id="toggletwo">Read More</button>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../images/about-us-img/teacher-three.jpg" alt="Avatar">
+                        <div class="img_card">
+                            <img src="../images/about-us-img/teacher-three.jpg" alt="Avatar">
+                        </div>
                         <h3><b>McKenzie Botbol</b></h3>
                         <h4><b>Advanced training weekend leader</b></h4>
+                        <div class="text_area">
                         <p>McKenzie was born and raised in the San Francisco Bay Area. Growing up close to the beach and with family from Hawai’i, she gained a 
                             connection to the ocean as a young person that has stayed with her into adulthood. She first learned to surf in Half Moon Bay and later
-                            Santa Cruz, where she got her first real longboard. Kaylie studied at Loyola University New Orleans, where she played on the water
-                            polo team and was a member of various honors societies. She with her Bachelor’s degree in English Literature and a minor in 
+                            Santa Cruz, where she got her first real longboard. Kaylie studied at <span id="textthree">
+                            Loyola University New Orleans,  where she played on the water polo team and was a member of various honors societies. She with her Bachelor’s degree in English Literature and a minor in 
                             Classical Studies in May 2019. During her summers in college, she was a surf instructor and ocean lifeguard in San Diego, California.
-                            She also taught kindergarteners in New Orleans. </p> 
+                            She also taught kindergarteners in New Orleans. </span></p> <button id="togglethree">Read More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,19 +134,26 @@
 
     </main>
     <footer>
-        <div class="social-media">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
+        <div class="foote_container">
+            <div class="left_footer">
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <p class="rights">© All Rights Reserved</p>
+            </div>
+            <ul class="footer_links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+            </ul>
         </div>
-        <p class="rights">© All Rights Reserved</p>
-        <ul class="footer-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/about.html">About Us</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="../pages/contact.html">Contact Us</a></li>
-        </ul>
     </footer>
+
+    <script type="text/javascript" src="../javascript/about/jquery.min.js"></script>
+    <script type="text/javascript"  src="../javascript/about/custom.js"></script>
 </body>
 </html>

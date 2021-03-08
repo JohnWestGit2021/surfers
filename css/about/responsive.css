@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1400px){
+	section.about-us-introduction{
+		width: 120rem;
+	}
+}
+
+@media only screen and (max-width: 1300px){
+	.about-us-team .row .column .card .img_card{
+		max-height: 400px;		
+	}
+	section.about-us-introduction{
+		width: auto;
+		padding-right: 30px;
+		padding-left: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 1200px){
+	.about-us-team .row .column{
+		    margin: 0px 3rem;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	section.about-us-introduction{
+		display: block;
+	}
+	section.about-us-introduction .about-us-introduction-text{
+		padding:0px 20px;
+	}
+	section.about-us-introduction .about-us-introduction-text h2{
+		text-align: center;
+	}
+	.about-us-team .row{
+		display: block;
+	}
+	.about-us-team .row .column{
+		width: 100%;
+		margin: 0px;
+	}
+	.about-us-team .row .column .card{
+		margin-bottom: 30px;
+	}
+	.about-us-team .row .column .card .img_card {
+	    width: 300px;
+	    margin: 0px auto 20px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	footer .foote_container{
+		    flex-direction: column-reverse;
+	}
+	footer .foote_container .left_footer{
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.hero{
+		height: 35rem;
+	}
+	header nav{
+		display: block;
+	}
+	header nav .navList{
+		display: flex;
+    	align-items: unset;
+    	height: 10rem;
+	}
+	section.about-us-introduction .about_top_img {
+	    flex: 1.3;
+	    margin-right: 0;
+	    margin-top: 0;
+	    width: 100%;
+	    border-top-right-radius: 0px;
+	    border-bottom-right-radius: 0px;
+	}
+	section.about-us-introduction .about_top_img img{
+		border-top-right-radius: 0px;
+	    border-bottom-right-radius: 0px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.about-us-team .row .column .card .img_card{
+		width: 100%;
+	}
+}
