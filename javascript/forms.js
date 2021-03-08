@@ -5,10 +5,10 @@ let weeklyCamp = document.getElementById("weeklyTraning-signUpForm");
 let mainCamp = document.getElementById("mainCamp-signUpInformation");
 
 //will make the forms display below the camp articles.
-//main camp infromation
+//main camp infomation
 function mainCampSignUp() {
     if (mainCamp.style.display === "none") {
-      mainCamp.style.display = "flex"; //this needs to be flex for the syling to work
+      mainCamp.style.display = "flex"; //this needs to be flex for the styling to work
       //closes all the other forms on the window.
       preCamp.style.display = "none";
       advCamp.style.display = "none";
@@ -23,7 +23,7 @@ function mainCampSignUp() {
   //pre-traning camp form
   function preTraningSignUp() {
     if (preCamp.style.display === "none") {
-      preCamp.style.display = "flex"; //this needs to be flex for the syling to work
+      preCamp.style.display = "flex"; //this needs to be flex for the styling to work
       //closes all the other forms on the window.
       advCamp.style.display = "none";
       weeklyCamp.style.display = "none";
