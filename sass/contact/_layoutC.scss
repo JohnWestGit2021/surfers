@@ -2,18 +2,16 @@
 @import "fontC";
 @import "colorC";
 
-/* ----- Navigation with navlinks ----- */
+.logo {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+}
 
 /* ----- Main content with header and cards ----- */
 .header {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-evenly;
   width: 95%;
-  // max-width: 90rem;
-  // min-height: 80rem;
   margin: auto;
-  position: relative;
 
   &__wrapper {
     display: flex;
@@ -23,13 +21,11 @@
     max-width: 90rem;
     min-height: 80rem;
     margin: auto;
-    position: relative;
   }
   &__text {
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: relative;
   }
   &__cards {
     display: flex;
@@ -38,7 +34,6 @@
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    position: relative;
   }
 }
 /* ----- Cards ----- */
@@ -70,5 +65,3 @@
   @include employee-img;
   object-position: top;
 }
-
-/* ----- Footer ----- */

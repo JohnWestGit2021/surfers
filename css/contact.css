@@ -11,7 +11,9 @@
   font-family: "Roboto", "Lato", sans-serif; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative; }
 
 .header__text h1 {
   font-family: "Original Surfer", sans-serif;
@@ -105,12 +107,15 @@ body {
 .grid label {
   color: #555; }
 
-/* ----- Navigation with navlinks ----- */
+.logo {
+  position: absolute;
+  top: 7rem;
+  left: 0; }
+
 /* ----- Main content with header and cards ----- */
 .header {
   width: 95%;
-  margin: auto;
-  position: relative; }
+  margin: auto; }
   .header__wrapper {
     display: flex;
     flex-direction: column;
@@ -118,21 +123,18 @@ body {
     width: 90%;
     max-width: 90rem;
     min-height: 80rem;
-    margin: auto;
-    position: relative; }
+    margin: auto; }
   .header__text {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    position: relative; }
+    text-align: center; }
   .header__cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    margin: 0 auto;
-    position: relative; }
+    margin: 0 auto; }
 
 /* ----- Cards ----- */
 .header .card1 {
@@ -146,8 +148,7 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1.4em;
-  position: relative; }
+  margin: 1.4em; }
 
 .card2 {
   display: flex;
@@ -160,8 +161,7 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1.4em;
-  position: relative; }
+  margin: 1.4em; }
 
 .card3 {
   display: flex;
@@ -174,8 +174,7 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1.4em;
-  position: relative; }
+  margin: 1.4em; }
 
 .card4 {
   display: flex;
@@ -188,8 +187,7 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1em;
-  margin: 1.4em;
-  position: relative; }
+  margin: 1.4em; }
 
 /* ----- Card images ----- */
 .img--1 {
@@ -221,7 +219,5 @@ body {
   border-radius: 50%;
   object-fit: cover;
   object-position: top; }
-
-/* ----- Footer ----- */
 
 /*# sourceMappingURL=contact.css.map */
