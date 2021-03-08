@@ -236,5 +236,13 @@ body {
     background-size: cover;
     width: 40rem;
     height: 40rem; }
+  .contact i:hover {
+    color: #dc9223;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s; }
 
 /*# sourceMappingURL=contact.css.map */
