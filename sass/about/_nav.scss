@@ -1,0 +1,49 @@
+/*navigation section*/
+header{
+    @include SectionSize(10rem);
+    @include flex(row, space-around, center);
+    position: relative;
+
+    nav{
+        @include flex(row, space-between, center);
+        width: 122rem;
+        max-width: 122rem;
+        min-width: 35rem;
+
+        /*change to svg logo*/
+        .logo{
+            position: relative;
+            z-index: 2;
+            transform: translateY(-2.8rem);
+
+            max-width: 21rem;
+            height: auto;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .navList{
+            @include flex(row, space-between, center);
+            width: 40rem;
+            max-width: 45rem;
+            min-width: 38rem;
+            
+            .navList-item{
+                list-style: none;
+                
+                .navLink{
+                    text-decoration: none;
+                    color: $buttonTextColor;
+                    font-weight: bold;
+                    padding: 1rem;     
+
+                }
+                    .navLink:hover{
+                        text-decoration: underline;
+                    }
+            }
+        }
+    }
+}
