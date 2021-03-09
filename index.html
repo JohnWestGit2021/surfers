@@ -23,9 +23,11 @@
     <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--styleSheets-->
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/1c11390acb.js" crossorigin="anonymous"></script>
     <title>Home page</title>
   </head>
 
@@ -85,7 +87,7 @@
 
           <!-- ------------- sign up form- main camp starts here-------------- -->
           <!-- ------------- sign up form- main camp starts here-------------- -->
-            <section id="mainCamp-signUpInformation">
+            <section id="mainCamp-signUpInformation" style="display: none;">
               <article class="signUp-article">
                 <h2 class="signUpForm_heading secondHeading">
                   Lorem.
@@ -154,8 +156,8 @@
                      <label for="EmailParent">E-mail (guradian)</label>
                      <input type="email" id="EmailParent">
                       <!-- mobile -->
-                    <label for="Mobile">Mobile (guradian)</label>
-                    <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                    <label for="MobileParent">Mobile (guradian)</label>
+                    <input type="text" id="MobileParent" placeholder="076 101 23 14" required>
                    
                     <!-- submit section -->
                     <div class="termsAndSubmit">
@@ -236,7 +238,7 @@
         <!-- ------------- sign up forms for sub camps camp start here -------------- -->
             <section class="subcampForms">
               <!--pre traning camp form-->
-              <div id="preTraning-signUpForm">
+              <div id="preTraning-signUpForm" style="display: none;">
                  <!------- article ------>
                  <article class="signUp-article">
                   <h2 class="signUpForm_heading thirdHeading">
@@ -273,34 +275,34 @@
                       <!--first column of the form-->
                       <div class="firstFormColumn">
                           <!-- name of participant -->
-                          <label for="Participant">Full name (participant)</label>
-                          <input type="text" id="Participant" required>
+                          <label for="ParticipantPre">Full name (participant)</label>
+                          <input type="text" id="ParticipantPre" required>
                           <!-- email -->
-                          <label for="Email">Type your email</label>
-                          <input type="email" id="Email" required>
+                          <label for="EmailPre">Type your email</label>
+                          <input type="email" id="EmailPre" required>
                           <!-- mobile -->
-                          <label for="Mobile">Mobile Number</label>
-                          <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                          <label for="MobilePre">Mobile Number</label>
+                          <input type="text" id="MobilePre" placeholder="076 101 23 14" required>
                           <!--Tell us something about you! -->
-                          <label for="Message">tell us something about you</label>
-                          <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                          <label for="MessagePre">tell us something about you</label>
+                          <textarea name="message" id="MessagePre" cols="30" rows="10"></textarea>
                         </div>
                       <!--second column of the form-->
                       <div class="secondFormColumn">
                           <!-- name of parenet -->
-                          <label for="Parent">Full name (guradian)</label>
-                          <input type="text" id="Parent">
+                          <label for="ParentPre">Full name (guradian)</label>
+                          <input type="text" id="ParentPre">
                             <!-- email -->
-                            <label for="EmailParent">E-mail (guradian)</label>
-                            <input type="email" id="EmailParent">
+                            <label for="EmailParentPre">E-mail (guradian)</label>
+                            <input type="email" id="EmailParentPre">
                             <!-- mobile -->
-                          <label for="Mobile">Mobile (guradian)</label>
-                          <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                          <label for="MobileParentPre">Mobile (guradian)</label>
+                          <input type="text" id="MobileParentPre" placeholder="076 101 23 14" required>
                           
                           <!-- submit section -->
                           <div class="termsAndSubmit">
-                            <input type="checkbox" id="Terms" required>
-                            <label for="Terms"><a href="#">Agree on terms</a></label>
+                            <input type="checkbox" id="TermsPre" required>
+                            <label for="TermsPre"><a href="#">Agree on terms</a></label>
                           </div>
                             <!--button-->
                             <button type="submit">submit</button>
@@ -309,7 +311,7 @@
               </div>
               
               <!--advanced traning camp form-->
-              <div id="advancedTraning-signUpForm">
+              <div id="advancedTraning-signUpForm" style="display: none;">
                  <!------- article ------>
                  <article class="signUp-article">
                   <h2 class="signUpForm_heading secondHeading">
@@ -355,34 +357,34 @@
                   <!--first column of the form-->
                   <div class="firstFormColumn">
                       <!-- name of participant -->
-                      <label for="Participant">Full name (participant)</label>
-                      <input type="text" id="Participant" required>
+                      <label for="ParticipantAdv">Full name (participant)</label>
+                      <input type="text" id="ParticipantAdv" required>
                       <!-- email -->
-                      <label for="Email">Type your email</label>
-                      <input type="email" id="Email" required>
+                      <label for="EmailAdv">Type your email</label>
+                      <input type="email" id="EmailAdv" required>
                       <!-- mobile -->
-                      <label for="Mobile">Mobile Number</label>
-                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                      <label for="MobileAdv">Mobile Number</label>
+                      <input type="text" id="MobileAdv" placeholder="076 101 23 14" required>
                       <!--Tell us something about you! -->
-                      <label for="Message">tell us something about you</label>
-                      <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                      <label for="MessageAdv">tell us something about you</label>
+                      <textarea name="message" id="MessageAdv" cols="30" rows="10"></textarea>
                     </div>
                   <!--second column of the form-->
                   <div class="secondFormColumn">
                       <!-- name of parenet -->
-                      <label for="Parent">Full name (guradian)</label>
-                      <input type="text" id="Parent">
+                      <label for="ParentAdv">Full name (guradian)</label>
+                      <input type="text" id="ParentAdv">
                         <!-- email -->
-                        <label for="EmailParent">E-mail (guradian)</label>
-                        <input type="email" id="EmailParent">
+                        <label for="EmailParentAdv">E-mail (guradian)</label>
+                        <input type="email" id="EmailParentAdv">
                         <!-- mobile -->
-                      <label for="Mobile">Mobile (guradian)</label>
-                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                      <label for="MobileParentAdv">Mobile (guradian)</label>
+                      <input type="text" id="MobileParentAdv" placeholder="076 101 23 14" required>
                       
                       <!-- submit section -->
                       <div class="termsAndSubmit">
-                        <input type="checkbox" id="Terms" required>
-                        <label for="Terms"><a href="#">Agree on terms</a></label>
+                        <input type="checkbox" id="TermsAdv" required>
+                        <label for="TermsAdv"><a href="#">Agree on terms</a></label>
                       </div>
                         <!--button-->
                         <button type="submit">submit</button>
@@ -391,7 +393,7 @@
               </div>
 
               <!--weekly traning camp form-->
-              <div id="weeklyTraning-signUpForm">
+              <div id="weeklyTraning-signUpForm" style="display: none;">
                  <!------- article ------>
                  <article class="signUp-article">
                   <h2 class="signUpForm_heading secondHeading">
@@ -430,34 +432,34 @@
                   <!--first column of the form-->
                   <div class="firstFormColumn">
                       <!-- name of participant -->
-                      <label for="Participant">Full name (participant)</label>
-                      <input type="text" id="Participant" required>
+                      <label for="ParticipantWkl">Full name (participant)</label>
+                      <input type="text" id="ParticipantWkl" required>
                       <!-- email -->
-                      <label for="Email">Type your email</label>
-                      <input type="email" id="Email" required>
+                      <label for="EmailWkl">Type your email</label>
+                      <input type="email" id="EmailWkl" required>
                       <!-- mobile -->
-                      <label for="Mobile">Mobile Number</label>
-                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                      <label for="MobileWkl">Mobile Number</label>
+                      <input type="text" id="MobileWkl" placeholder="076 101 23 14" required>
                       <!--Tell us something about you! -->
-                      <label for="Message">tell us something about you</label>
-                      <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                      <label for="MessageWkl">tell us something about you</label>
+                      <textarea name="message" id="MessageWkl" cols="30" rows="10"></textarea>
                     </div>
                   <!--second column of the form-->
                   <div class="secondFormColumn">
                       <!-- name of parenet -->
-                      <label for="Parent">Full name (guradian)</label>
-                      <input type="text" id="Parent">
+                      <label for="ParentWkl">Full name (guradian)</label>
+                      <input type="text" id="ParentWkl">
                         <!-- email -->
-                        <label for="EmailParent">E-mail (guradian)</label>
-                        <input type="email" id="EmailParent">
+                        <label for="EmailParentWkl">E-mail (guradian)</label>
+                        <input type="email" id="EmailParentWkl">
                         <!-- mobile -->
-                      <label for="Mobile">Mobile (guradian)</label>
-                      <input type="text" id="Mobile" placeholder="076 101 23 14" required>
+                      <label for="MobileParentWkl">Mobile (guradian)</label>
+                      <input type="text" id="MobileParentWkl" placeholder="076 101 23 14" required>
                       
                       <!-- submit section -->
                       <div class="termsAndSubmit">
-                        <input type="checkbox" id="Terms" required>
-                        <label for="Terms"><a href="#">Agree on terms</a></label>
+                        <input type="checkbox" id="TermsWkl" required>
+                        <label for="TermsWkl"><a href="#">Agree on terms</a></label>
                       </div>
                         <!--button-->
                         <button type="submit">submit</button>
@@ -525,18 +527,18 @@
       <div class="foote_container">
           <div class="left_footer">
               <div class="social-media">
-                  <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a href="#" class="fa fa-youtube"></a>
-                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" aria-label="faceook" class="fa fa-facebook"></a>
+                  <a href="#" aria-label="Twitter" class="fa fa-twitter"></a>
+                  <a href="#" aria-label="youtube" class="fa fa-youtube"></a>
+                  <a href="#" aria-label="instagram" class="fa fa-instagram"></a>
               </div>
               <p class="rights">© All Rights Reserved</p>
           </div>
           <ul class="footer_links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../pages/about.html">About Us</a></li>
-              <li><a href="">Gallery</a></li>
-              <li><a href="../pages/contact.html">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/gallery.html">Gallery</a></li>
+              <li><a href="pages/contact.html">Contact Us</a></li>
           </ul>
       </div>
   </footer>
