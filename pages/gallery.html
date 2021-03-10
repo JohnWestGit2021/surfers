@@ -5,38 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Anton">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/gallery.css">
     <title>Gallery</title>
 </head>
 <body>
-    <h1 class="gallery_head">Gallery</h1>
+    <h1 class="gallery_head">Gallery!</h1>
 
-    <img src="../images/surfers_camp_logo.png" alt="logo" class="right__logo">
+    <!--hero of landing page-->
+    <section class="hero">
+        <!--this might not be needed - depends if i can make it work-->
+        <div class="imageSliderContainer">
+            <img class="heroImg" src="../images/landingPage-img/surfers.jpg" alt="surfer" class="slider-standard">
+        </div>
+      </section>
+
+      <header>
+        <nav>
+          <div class="logo"><img src="../images/logo-svg/logo.svg" alt="logo"></div>
+          <ul class="navList">
+            <li class="navList-item"><a href="index.html" class="navLink">Home</a></li>
+            <li class="navList-item"><a href="pages/about.html" class="navLink">About us</a></li>
+            <li class="navList-item"><a href="pages/gallery.html" class="navLink">Gallery</a></li>
+            <li class="navList-item"><a href="pages/contact.html" class="navLink">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+    <img src="../images/gallery-img/logo.svg" alt="logo" class="right__logo">
 <!-- Instructors -->
     <div class="gallery">
-        <h3 class="instructors_text">Instructors:</h3>
+        <h3 class="instructors_text">Camp July:</h3>
         <div class="row1">
             <div class="imgs">
                 <div class="img">
-                    <img src="../images/surfer_matt.jpg" alt="Male1">
+                    <img class="galleryImg" src="../images/gallery-img/surfing-camp1.jpg" alt="Camp1">
                     <div class="des">
-                        <p>Hey! My name's Matt. Welcome to our surfing camp. I will take you on a wild journey! </p>
+                        <p>Stepping on the board! </p>
                         <!-- <p>Age: 40</p>
                         <p>Email: mail@gmail.com</p> -->
                     </div>
                 </div>
                 <div class="img">
-                    <img src="../images/surfer_jake.jpg" alt="Male2">
+                    <img class="galleryImg" src="../images/gallery-img/surfing-camp2.png" alt="Camp2">
                     <div class="des">
-                        <p>Hey! Jake here. Let my guide you on how work the board correctly. Hang loose 🤙</p>
+                        <p>A morning stretch before take off!</p>
                         <!-- <p>Age: 40</p>
                         <p>Email: mail@gmail.com</p> -->
                     </div>
                 </div>
                 <div class="img">
-                    <img src="../images/surfer_mark.png" alt="Male3">
+                    <img class="galleryImg" src="../images/gallery-img/surfing-camp3.jpg" alt="Camp3">
                     <div class="des">
-                        <p>Hey Everybody! I'm Mark. Jump on board and let the camp blow all your expectations. </p>
+                        <p>The group! </p>
                         <!-- <p>Age: 40</p>
                         <p>Email: mail@gmail.com</p> -->
                     </div>
@@ -45,29 +67,29 @@
         </div>
         
         <!-- Students -->
-        <h3 class="r_head stu">Students:</h3>
+        <h3 class="r_head stu">Camp June:</h3>
         <div class="row2">
             <div class="imgs">
                 <div class="img">
-                    <img src="../images/male-card1.jpg" alt="Male1">
+                    <img class="galleryImg" src="../images/gallery-img/surfing-camp4.jpg" alt="Male1">
                     <div class="des">
-                        <p>Wow! I joined the camp and we had a really fantastic time! </p>
+                        <p>Learning the board! </p>
                         <!-- <p>Age: 40</p>
                         <p>Email: mail@gmail.com</p> -->
                     </div>
                 </div>
                 <div class="img">
-                    <img src="../images/male-card2.jpg" alt="Male2">
+                    <img class="galleryImg" src="../images/gallery-img/surfing-camp5.jpg" alt="Male2">
                     <div class="des">
-                        <p>I had a blast! Learnt how to work the board and made a lot of new friends!</p>
+                        <p>Getting ready to step out!</p>
                         <!-- <p>Age: 40</p>
                         <p>Email: mail@gmail.com</p> -->
                     </div>
                 </div>
                 <div class="img">
-                    <img src="../images/male-card3.jpg" alt="Male3">
-                    <div class="des">
-                        <p>I applied for the camp and wow what an experience! It got pretty crazy.</p>
+                    <img class="galleryImg" src="../images/gallery-img/surfing-camp6.jpg" alt="Male3">
+                    <div  class="des">
+                        <p>The group!</p>
                         <!-- <p>Age: 40</p>
                         <p>Email: mail@gmail.com</p> -->
                     </div>
@@ -78,6 +100,28 @@
 </body>
 </html>
 
-<footer class="footer">
-    <p style="color: rgb(0, 0, 0);">© All Rights Reserved 2021 </p>
+<!--footer section starts here-->
+
+<footer>
+    <div class="foote_container">
+        <div class="left_footer">
+            <div class="social-media">
+                <a href="#" aria-label="faceook" class="fa fa-facebook"></a>
+                <a href="#" aria-label="Twitter" class="fa fa-twitter"></a>
+                <a href="#" aria-label="youtube" class="fa fa-youtube"></a>
+                <a href="#" aria-label="instagram" class="fa fa-instagram"></a>
+            </div>
+            <p class="rights">© All Rights Reserved</p>
+        </div>
+        <ul class="footer_links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
 </footer>
+
+<!-- <footer class="footer">
+    <p style="color: rgb(0, 0, 0);">© All Rights Reserved 2021 </p>
+</footer> -->
