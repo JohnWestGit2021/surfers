@@ -251,8 +251,8 @@ header nav .navList .navList-item .navLink:hover {
   max-width: 144rem;
   /*may change later on... depends on what widths the rest of the pages are.*/
   background-color: #ffffff;
-  height: 80rem;
-  max-height: 80rem;
+  height: 70rem;
+  max-height: 70rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
