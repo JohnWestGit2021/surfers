@@ -1,6 +1,6 @@
 /*Main camp sections*/
 .sectionTwo{
-    @include SectionSize(80rem);
+    @include SectionSize(70rem);
     @include flex(row, space-evenly, center);
     background-color: $whiteBackgroundColor;
 
