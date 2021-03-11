@@ -8,6 +8,11 @@
 html{
     font-size: 62.5%;
 }
+
+body{
+  background-color: #efefef;
+  font-size: 16px;
+}
 /*nav*/
 /*navigation section*/
 header {
@@ -142,8 +147,9 @@ header {
   -webkit-animation: imgSlider 30s linear infinite;
           animation: imgSlider 30s linear infinite;
 }
- 
-    
+ /*gallery*/
+
+
 .galleryImg{
   height: 250px;
   width: 300px;
@@ -159,31 +165,39 @@ header {
 
 .gallery_head{
     text-align: center;
-    margin-top: 100px;
     font-family: 'Reggae One', cursive;
-    font-size: 60px;
-    padding-bottom: 100px;
-    /* color: #462d07; */ 
+    font-size: 50px;
+    background-color: #ffffff;
+    max-width: 1440px;
+    height: 200px;
+    margin: auto;
+    padding-top: 50px;
+    /* color: #c61d1d;  */
 
 }
 
 .gallery{
-    width: 100%;
     padding: 0 150px;
     margin: auto;
-    
+    background-color: #ffffff;
+   max-width: 1440px;
+   height: 1000px;
+   padding-top: 20px;
+  
 }
 
 .gallery .instructors_text{
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Original Surfer', sans-serif;
+    /* color: #60dad4; */
     
 }
 
 .gallery .r_head.stu{
     margin-top: 70px;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Original Surfer', sans-serif;
+    font-weight: bold;
+    /* color: #60dad4; */
 }
 
 .gallery .row1{
@@ -200,15 +214,9 @@ header {
     justify-content: space-between;
     
 }
-.gallery .row1 .imgs .img .des{
+.gallery .row1 .imgs .img .des, .gallery .row2 .imgs .img .des{
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin-top: 20px;
-    width: 210px;
-}
-.gallery .row2 .imgs .img .des{
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px;
     width: 210px;
 }
@@ -220,8 +228,7 @@ header {
 .footer {
     margin-top: 100px;
     margin-bottom: 20px;
-    margin-left: 30px;
-    
+    margin-left: 30px;   
 }
 
 .gallery .row2{
@@ -252,7 +259,7 @@ footer {
   footer .foote_container {
     max-width: 122rem;
     margin: 0px auto;
-    padding: 40px 0px;
+    padding: 50px 0px;
     display: flex;
   }
     footer .foote_container .left_footer {
