@@ -94,6 +94,8 @@ header {
   }
   
   header nav .navList .navList-item .navLink {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     color: #00416d;
     font-weight: bold;
