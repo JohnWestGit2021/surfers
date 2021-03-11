@@ -4,9 +4,59 @@
  @include flex(row, center, flex-start);
  position: relative;
 
+ .slogan{
+    @include flex (column, center, center);
+    position: absolute;
+    top: 35%;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+
+    background-color: #3f857f85;
+
+    h3{
+        color: white;
+        letter-spacing: 0.8rem;
+        margin-top: 1rem;
+        border-top: 1px solid white;
+        padding: 10px 0 0 0;
+        font-size: 14px;
+    }
+
+    h2{
+        color: white;
+        letter-spacing: 0.5rem;
+        font-family: "Original Surfer", sans-serif;
+    }
+}
+
     .imageSliderContainer{
         max-height: 100%;
          
+          .slogan{
+        @include flex (column, center, center);
+        position: absolute;
+        top: 35%;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+
+        background-color: #3f857f85;
+
+        h3{
+            color: white;
+            letter-spacing: 1rem;
+            margin-top: 1rem;
+            border-top: 1px solid white;
+            padding: 10px 0 0 0;
+            font-size: 14px;
+        }
+
+        h2{
+            color: white;
+            letter-spacing: 0.5rem;
+            font-family: "Original Surfer", sans-serif;
+        }
+    }
+
         
         img{
             width: 100%;
