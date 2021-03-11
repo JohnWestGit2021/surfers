@@ -195,8 +195,80 @@ header nav .navList .navList-item .navLink:hover {
   position: relative;
 }
 
+.hero .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 35%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #3f857f85;
+}
+
+.hero .slogan h3 {
+  color: white;
+  letter-spacing: 0.8rem;
+  margin-top: 1rem;
+  border-top: 1px solid white;
+  padding: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.hero .slogan h2 {
+  color: white;
+  letter-spacing: 0.5rem;
+  font-family: "Original Surfer", sans-serif;
+}
+
 .hero .imageSliderContainer {
   max-height: 100%;
+}
+
+.hero .imageSliderContainer .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 35%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #3f857f85;
+}
+
+.hero .imageSliderContainer .slogan h3 {
+  color: white;
+  letter-spacing: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid white;
+  padding: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.hero .imageSliderContainer .slogan h2 {
+  color: white;
+  letter-spacing: 0.5rem;
+  font-family: "Original Surfer", sans-serif;
 }
 
 .hero .imageSliderContainer img {
